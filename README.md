@@ -1,0 +1,2 @@
+# QZWeiXin
+init
