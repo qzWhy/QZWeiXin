@@ -1,0 +1,17 @@
+//
+//  GlobalDefines.pch
+//  QZWeiXin
+//
+//  Created by 000 on 17/11/6.
+//  Copyright © 2017年 范庆忠. All rights reserved.
+//
+
+#ifndef GlobalDefines_pch
+#define GlobalDefines_pch
+
+#define Global_tintColor [UIColor colorWithRed:0 green:(190 / 255.0) blue:(12 / 255.0) alpha:1]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* GlobalDefines_pch */
