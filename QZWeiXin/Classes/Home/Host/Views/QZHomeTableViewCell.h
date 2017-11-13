@@ -10,4 +10,13 @@
 
 @interface QZHomeTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) UIImageView *iconImageView;
+@property (nonatomic, strong) UILabel *nameLabel;
+@property (nonatomic, strong) UILabel *timeLabel;
+@property (nonatomic, strong) UILabel *messageLabel;
+
+
++ (CGFloat)fixedHeight;
+
+
 @end

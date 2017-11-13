@@ -67,6 +67,8 @@
 		262F7DBB1FB0619100C2D24E /* tx.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 262F7D881FB0619100C2D24E /* tx.jpeg */; };
 		262F7DC21FB0629600C2D24E /* QZHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F7DBF1FB0629600C2D24E /* QZHomeTableViewController.m */; };
 		262F7DC51FB062E300C2D24E /* QZHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F7DC41FB062E300C2D24E /* QZHomeTableViewCell.m */; };
+		2642B7411FB941B800941CEA /* QZHomeTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2642B7401FB941B800941CEA /* QZHomeTableViewCellModel.m */; };
+		84A227F7777A04F396568035 /* libPods-QZWeiXin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD077EED71E100B8E3ED2A6 /* libPods-QZWeiXin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,7 @@
 		1BA75CB81FA467C900B99A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BA75CBA1FA467C900B99A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		1BA75CBB1FA467C900B99A3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
+		1CD077EED71E100B8E3ED2A6 /* libPods-QZWeiXin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QZWeiXin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		262F7CCE1FB04B1A00C2D24E /* GlobalDefines.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GlobalDefines.pch; path = ../GlobalDefines.pch; sourceTree = "<group>"; };
 		262F7D3C1FB0617100C2D24E /* QZAppFrameTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAppFrameTabBarController.h; sourceTree = "<group>"; };
 		262F7D3D1FB0617100C2D24E /* QZAppFrameTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAppFrameTabBarController.m; sourceTree = "<group>"; };
@@ -139,6 +142,10 @@
 		262F7DBF1FB0629600C2D24E /* QZHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZHomeTableViewController.m; sourceTree = "<group>"; };
 		262F7DC31FB062E300C2D24E /* QZHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZHomeTableViewCell.h; sourceTree = "<group>"; };
 		262F7DC41FB062E300C2D24E /* QZHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZHomeTableViewCell.m; sourceTree = "<group>"; };
+		2642B73F1FB941B800941CEA /* QZHomeTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZHomeTableViewCellModel.h; sourceTree = "<group>"; };
+		2642B7401FB941B800941CEA /* QZHomeTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZHomeTableViewCellModel.m; sourceTree = "<group>"; };
+		2E2D75DCF0BF0CE22364465D /* Pods-QZWeiXin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QZWeiXin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QZWeiXin/Pods-QZWeiXin.debug.xcconfig"; sourceTree = "<group>"; };
+		486394B38F83B96C6B17357F /* Pods-QZWeiXin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QZWeiXin.release.xcconfig"; path = "Pods/Target Support Files/Pods-QZWeiXin/Pods-QZWeiXin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A227F7777A04F396568035 /* libPods-QZWeiXin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +165,8 @@
 			children = (
 				1BA75CAB1FA467C900B99A3F /* QZWeiXin */,
 				1BA75CAA1FA467C900B99A3F /* Products */,
+				ACCC8DF0D6F90DFAFA767996 /* Pods */,
+				D16BC2332BF9575820706AD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -390,6 +400,8 @@
 		262F7DC01FB0629600C2D24E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2642B73F1FB941B800941CEA /* QZHomeTableViewCellModel.h */,
+				2642B7401FB941B800941CEA /* QZHomeTableViewCellModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -403,6 +415,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		ACCC8DF0D6F90DFAFA767996 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E2D75DCF0BF0CE22364465D /* Pods-QZWeiXin.debug.xcconfig */,
+				486394B38F83B96C6B17357F /* Pods-QZWeiXin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D16BC2332BF9575820706AD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CD077EED71E100B8E3ED2A6 /* libPods-QZWeiXin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -410,9 +439,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BA75CBF1FA467C900B99A3F /* Build configuration list for PBXNativeTarget "QZWeiXin" */;
 			buildPhases = (
+				22CC9F56DDCAAC2F151E2778 /* [CP] Check Pods Manifest.lock */,
 				1BA75CA51FA467C900B99A3F /* Sources */,
 				1BA75CA61FA467C900B99A3F /* Frameworks */,
 				1BA75CA71FA467C900B99A3F /* Resources */,
+				937E60D79D5EB6055ED68DFE /* [CP] Embed Pods Frameworks */,
+				7F0E4E7BD6986719607BFF74 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -519,6 +551,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22CC9F56DDCAAC2F151E2778 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QZWeiXin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F0E4E7BD6986719607BFF74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QZWeiXin/Pods-QZWeiXin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		937E60D79D5EB6055ED68DFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QZWeiXin/Pods-QZWeiXin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1BA75CA51FA467C900B99A3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -529,6 +612,7 @@
 				262F7D4E1FB0617100C2D24E /* QZBaseTableViewController.m in Sources */,
 				262F7DC51FB062E300C2D24E /* QZHomeTableViewCell.m in Sources */,
 				262F7DC21FB0629600C2D24E /* QZHomeTableViewController.m in Sources */,
+				2642B7411FB941B800941CEA /* QZHomeTableViewCellModel.m in Sources */,
 				262F7D4C1FB0617100C2D24E /* QZAppFrameTabBarController.m in Sources */,
 				1BA75CAE1FA467C900B99A3F /* AppDelegate.m in Sources */,
 			);
@@ -655,6 +739,7 @@
 		};
 		1BA75CC01FA467C900B99A3F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2D75DCF0BF0CE22364465D /* Pods-QZWeiXin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -672,6 +757,7 @@
 		};
 		1BA75CC11FA467C900B99A3F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 486394B38F83B96C6B17357F /* Pods-QZWeiXin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
