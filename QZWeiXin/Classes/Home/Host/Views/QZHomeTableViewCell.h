@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "QZHomeTableViewCellModel.h"
+
 @interface QZHomeTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) UIImageView *iconImageView;
@@ -15,6 +17,7 @@
 @property (nonatomic, strong) UILabel *timeLabel;
 @property (nonatomic, strong) UILabel *messageLabel;
 
+@property (nonatomic, strong) QZHomeTableViewCellModel *model;
 
 + (CGFloat)fixedHeight;
 

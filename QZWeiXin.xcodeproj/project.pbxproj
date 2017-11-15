@@ -68,6 +68,10 @@
 		262F7DC21FB0629600C2D24E /* QZHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F7DBF1FB0629600C2D24E /* QZHomeTableViewController.m */; };
 		262F7DC51FB062E300C2D24E /* QZHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F7DC41FB062E300C2D24E /* QZHomeTableViewCell.m */; };
 		2642B7411FB941B800941CEA /* QZHomeTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2642B7401FB941B800941CEA /* QZHomeTableViewCellModel.m */; };
+		26446C8F1FBA94C800E09D25 /* QZShortVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26446C8E1FBA94C800E09D25 /* QZShortVideoController.m */; };
+		26446C921FBA984000E09D25 /* QZShortVideoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26446C911FBA984000E09D25 /* QZShortVideoProgressView.m */; };
+		26446C951FBAB95B00E09D25 /* QZAnalogDataGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 26446C941FBAB95B00E09D25 /* QZAnalogDataGenerator.m */; };
+		26F881C61FB98F61006235D8 /* QZEyeAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F881C51FB98F61006235D8 /* QZEyeAnimationView.m */; };
 		84A227F7777A04F396568035 /* libPods-QZWeiXin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD077EED71E100B8E3ED2A6 /* libPods-QZWeiXin.a */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +148,14 @@
 		262F7DC41FB062E300C2D24E /* QZHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZHomeTableViewCell.m; sourceTree = "<group>"; };
 		2642B73F1FB941B800941CEA /* QZHomeTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZHomeTableViewCellModel.h; sourceTree = "<group>"; };
 		2642B7401FB941B800941CEA /* QZHomeTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZHomeTableViewCellModel.m; sourceTree = "<group>"; };
+		26446C8D1FBA94C800E09D25 /* QZShortVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZShortVideoController.h; sourceTree = "<group>"; };
+		26446C8E1FBA94C800E09D25 /* QZShortVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZShortVideoController.m; sourceTree = "<group>"; };
+		26446C901FBA984000E09D25 /* QZShortVideoProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZShortVideoProgressView.h; sourceTree = "<group>"; };
+		26446C911FBA984000E09D25 /* QZShortVideoProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZShortVideoProgressView.m; sourceTree = "<group>"; };
+		26446C931FBAB95B00E09D25 /* QZAnalogDataGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAnalogDataGenerator.h; sourceTree = "<group>"; };
+		26446C941FBAB95B00E09D25 /* QZAnalogDataGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAnalogDataGenerator.m; sourceTree = "<group>"; };
+		26F881C41FB98F61006235D8 /* QZEyeAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZEyeAnimationView.h; sourceTree = "<group>"; };
+		26F881C51FB98F61006235D8 /* QZEyeAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZEyeAnimationView.m; sourceTree = "<group>"; };
 		2E2D75DCF0BF0CE22364465D /* Pods-QZWeiXin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QZWeiXin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QZWeiXin/Pods-QZWeiXin.debug.xcconfig"; sourceTree = "<group>"; };
 		486394B38F83B96C6B17357F /* Pods-QZWeiXin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QZWeiXin.release.xcconfig"; path = "Pods/Target Support Files/Pods-QZWeiXin/Pods-QZWeiXin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -264,6 +276,8 @@
 		262F7D4A1FB0617100C2D24E /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				26446C931FBAB95B00E09D25 /* QZAnalogDataGenerator.h */,
+				26446C941FBAB95B00E09D25 /* QZAnalogDataGenerator.m */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -391,6 +405,7 @@
 		262F7DBD1FB0629600C2D24E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				26446C881FBA93E900E09D25 /* QZShortVideoController */,
 				262F7DBE1FB0629600C2D24E /* QZHomeTableViewController.h */,
 				262F7DBF1FB0629600C2D24E /* QZHomeTableViewController.m */,
 			);
@@ -409,10 +424,39 @@
 		262F7DC11FB0629600C2D24E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				26F881C31FB98F31006235D8 /* eyeAnimationView */,
 				262F7DC31FB062E300C2D24E /* QZHomeTableViewCell.h */,
 				262F7DC41FB062E300C2D24E /* QZHomeTableViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		26446C881FBA93E900E09D25 /* QZShortVideoController */ = {
+			isa = PBXGroup;
+			children = (
+				26446C891FBA940200E09D25 /* Views */,
+				26446C8D1FBA94C800E09D25 /* QZShortVideoController.h */,
+				26446C8E1FBA94C800E09D25 /* QZShortVideoController.m */,
+			);
+			path = QZShortVideoController;
+			sourceTree = "<group>";
+		};
+		26446C891FBA940200E09D25 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26446C901FBA984000E09D25 /* QZShortVideoProgressView.h */,
+				26446C911FBA984000E09D25 /* QZShortVideoProgressView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26F881C31FB98F31006235D8 /* eyeAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				26F881C41FB98F61006235D8 /* QZEyeAnimationView.h */,
+				26F881C51FB98F61006235D8 /* QZEyeAnimationView.m */,
+			);
+			path = eyeAnimationView;
 			sourceTree = "<group>";
 		};
 		ACCC8DF0D6F90DFAFA767996 /* Pods */ = {
@@ -607,14 +651,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26446C951FBAB95B00E09D25 /* QZAnalogDataGenerator.m in Sources */,
 				262F7D4D1FB0617100C2D24E /* QZBaseNavgationController.m in Sources */,
 				1BA75CBC1FA467C900B99A3F /* main.m in Sources */,
 				262F7D4E1FB0617100C2D24E /* QZBaseTableViewController.m in Sources */,
 				262F7DC51FB062E300C2D24E /* QZHomeTableViewCell.m in Sources */,
 				262F7DC21FB0629600C2D24E /* QZHomeTableViewController.m in Sources */,
+				26446C8F1FBA94C800E09D25 /* QZShortVideoController.m in Sources */,
 				2642B7411FB941B800941CEA /* QZHomeTableViewCellModel.m in Sources */,
 				262F7D4C1FB0617100C2D24E /* QZAppFrameTabBarController.m in Sources */,
 				1BA75CAE1FA467C900B99A3F /* AppDelegate.m in Sources */,
+				26F881C61FB98F61006235D8 /* QZEyeAnimationView.m in Sources */,
+				26446C921FBA984000E09D25 /* QZShortVideoProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
