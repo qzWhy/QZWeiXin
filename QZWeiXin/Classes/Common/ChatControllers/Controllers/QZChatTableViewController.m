@@ -9,6 +9,7 @@
 #import "QZChatTableViewController.h"
 #import "QZChatModel.h"
 #import "QZAnalogDataGenerator.h"
+#import "QZChatTableViewCell.h"
 
 @interface QZChatTableViewController ()
 
