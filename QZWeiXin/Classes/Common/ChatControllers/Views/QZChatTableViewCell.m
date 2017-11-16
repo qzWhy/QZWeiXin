@@ -8,6 +8,19 @@
 
 #import "QZChatTableViewCell.h"
 
+#define kLabelMargin 20.0f
+#define kLabelTopMargin 8.f
+#define kLabelBottomMargin 20.f
+
+#define kChatCellItemMargin 10.0f
+#define kChatCellIconImageViewWH 35.0f
+
+#define kMaxContainerWidth 220.f
+
+
+#define kMaxChatImageViewWidth 200.f
+#define kMaxChatImageViewHeight 300.f
+
 @interface QZChatTableViewCell ()<MLEmojiLabelDelegate>
 
 @property (nonatomic, strong) UIView *container;
@@ -70,22 +83,115 @@
     
     //根据model设置cell左浮动或者右浮动样式
     [self setMessageOriginWithModel:model];
+    
+    if (model.imageName) { //有图片等先看下设置图片自动布局
+        // cell重用时候清除只有文字的情况下设置的container宽度自适应约束
+        [self.container clearAutoWidthSettings];
+        self.messageImageView.hidden = NO;
+        
+        self.messageImageView.image = [UIImage imageNamed:model.imageName];
+        
+        //根据图片的宽高尺寸设置图片约束
+        CGFloat standardWidthHeightRtio = kMaxChatImageViewWidth /kMaxChatImageViewHeight;
+        CGFloat widthHeightRatio = 0;
+        UIImage *image = [UIImage imageNamed:model.imageName];
+        CGFloat h = image.size.height;
+        CGFloat w = image.size.width;
+        
+        if (w > kMaxChatImageViewWidth || w > kMaxChatImageViewHeight) {
+            
+            widthHeightRatio = w / h;
+            if (widthHeightRatio > standardWidthHeightRtio) {
+                w = kMaxChatImageViewWidth;
+                h = w * (image.size.height / image.size.width);
+            } else {
+                h = kMaxChatImageViewHeight;
+                w = h *widthHeightRatio;
+            }
+            
+        }
+        self.messageImageView.size = CGSizeMake(w, h);
+        _container.sd_layout
+        .widthIs(w)
+        .heightIs(h);
+        
+        //设置container以messageImageView为bottomView高度自适应
+        [_container setupAutoHeightWithBottomView:self.messageImageView bottomMargin:kChatCellItemMargin];
+        
+        //container按照maskImageView裁剪
+        self.container.layer.mask = self.maskImageView.layer;
+        
+        __weak typeof(self) weakSelf = self;
+        [_containerBackgroundImageView setDidFinishAutoLayoutBlock:^(CGRect frame) {
+            //在containerBackgroundImageView的frame确定之后设置maskImageView的size等于containerBackgroundImageView的size
+            weakSelf.maskImageView.size = frame.size;
+            
+        }];
+        
+    } else if (model.text) { //没有图片有蚊子情况下设置自动布局
+        //清除战士图片时候用到的mask
+        [_container.layer.mask removeFromSuperlayer];
+        
+        self.messageImageView.hidden = YES;
+        
+        //清除展示图片时候——containerBackgroundImageView用到到didFinishAutolyoutBlock
+        _containerBackgroundImageView.didFinishAutoLayoutBlock = nil;
+        
+        _label.sd_resetLayout
+        .leftSpaceToView(_container,kLabelMargin)
+        .topSpaceToView(_container,kLabelTopMargin)
+        .autoHeightRatio(0);//设置label纵向自适应
+        
+        //设置label横向自适应
+        [_label setSingleLineAutoResizeWithMaxWidth:kMaxContainerWidth];
+        
+        //container 以label为rightView宽度自适应
+        [_container setupAutoWidthWithRightView:_label rightMargin:kLabelMargin];
+        //container 以label为bottomView高度自适应
+        [_container setupAutoHeightWithBottomView:_label bottomMargin:kLabelBottomMargin];
+    }
+    
 }
-
 - (void)setMessageOriginWithModel:(QZChatModel *)model
 {
+    if (model.messageType == QZMessageTypeSendToOthers) {
+        //发送出去的消息设置居右样式
+        self.iconImageView.sd_layout
+        .rightSpaceToView(self.contentView,kChatCellItemMargin)
+        .topSpaceToView(self.contentView,kChatCellItemMargin)
+        .widthIs(kChatCellIconImageViewWH)
+        .heightIs(kChatCellIconImageViewWH);
+        
+        _container.sd_resetLayout
+        .topEqualToView(self.iconImageView)
+        .rightSpaceToView(self.iconImageView,kChatCellItemMargin);
+        
+        _containerBackgroundImageView.image = [[UIImage imageNamed:@"SenderTextNodeBkg"] stretchableImageWithLeftCapWidth:50 topCapHeight:30];
+    } else if (model.messageType == QZMessageTyoeSendToMe) {
+        //收到消息设置居左样式
+        self.iconImageView.sd_resetLayout
+        .leftSpaceToView(self.contentView,kChatCellItemMargin)
+        .topSpaceToView(self.contentView,kChatCellItemMargin)
+        .widthIs(kChatCellIconImageViewWH)
+        .heightIs(kChatCellIconImageViewWH);
+        
+        _container.sd_resetLayout
+        .topEqualToView(self.iconImageView)
+        .leftSpaceToView(self.iconImageView,kChatCellItemMargin);
+        
+        _containerBackgroundImageView.image = [[UIImage imageNamed:@"ReceiverTextNodeBkg"] stretchableImageWithLeftCapWidth:50 topCapHeight:30];
+    }
+    _maskImageView.image = _containerBackgroundImageView.image;
     
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
+#pragma mark - MLEmojiLabelDelegate
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)mlEmojiLabel:(MLEmojiLabel *)emojiLabel didSelectLink:(NSString *)link withType:(MLEmojiLabelLinkType)type
+{
+    if (self.didSelectLinkTextOprationBlock) {
+        self.didSelectLinkTextOprationBlock(link,type);
+    }
 }
 
 @end

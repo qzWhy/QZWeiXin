@@ -11,6 +11,7 @@
 #import "QZAnalogDataGenerator.h"
 #import "QZChatTableViewCell.h"
 
+#define kChatTableViewControllerCellId @"ChatTableViewController"
 @interface QZChatTableViewController ()
 
 @end
@@ -21,6 +22,13 @@
     [super viewDidLoad];
     
     [self setupDataWithCount:30];
+    
+    CGFloat rgb = 240;
+    self.tableView.backgroundColor = QZColor(rgb, rgb, rgb, 1);
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    [self.tableView registerClass:[QZChatTableViewCell class] forCellReuseIdentifier:kChatTableViewControllerCellId];
     
 }
 
@@ -56,7 +64,26 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    QZChatTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kChatTableViewControllerCellId];
+    cell.model = self.dataArray[indexPath.row];
     
+    __weak typeof(self) weakSelf = self;
+    [cell setDidSelectLinkTextOprationBlock:^(NSString *link, MLEmojiLabelLinkType type) {
+        if (type == MLEmojiLabelLinkTypeURL) {
+//            [weakSelf.navigationController pushViewController: animated:<#(BOOL)#> ]
+        }
+    }];
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGFloat h = [self.tableView cellHeightForIndexPath:indexPath model:self.dataArray[indexPath.row] keyPath:@"model" cellClass:[QZChatTableViewCell class] contentViewWidth:[UIScreen mainScreen].bounds.size.width];
+    return h;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@">>>> %@",[self.dataArray[indexPath.row] text]);
 }
 
 @end

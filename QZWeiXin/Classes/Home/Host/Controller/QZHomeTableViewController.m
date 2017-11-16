@@ -11,7 +11,7 @@
 #import "QZEyeAnimationView.h"
 #import "QZAnalogDataGenerator.h"
 #import "QZShortVideoController.h"
-
+#import "QZChatTableViewController.h"
 #define kHomeTableViewControllerCellId @"HomeTableViewController"
 
 #define kHomeObserveKeyPath @"contentOffset"
@@ -230,7 +230,10 @@ const CGFloat kHomeTableViewAnimationDuration = 0.25;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    UIViewController *vc = [QZChatTableViewController new];
+    vc.hidesBottomBarWhenPushed = YES;
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
