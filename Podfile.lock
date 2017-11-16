@@ -1,12 +1,18 @@
 PODS:
+  - MLEmojiLabel (1.0.2):
+    - TTTAttributedLabel (~> 1.13.4)
   - SDAutoLayout (2.2.0)
+  - TTTAttributedLabel (1.13.4)
 
 DEPENDENCIES:
+  - MLEmojiLabel
   - SDAutoLayout
 
 SPEC CHECKSUMS:
+  MLEmojiLabel: 36d73c19f9975cbf9def24e5bc135263b0337fd8
   SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
 
-PODFILE CHECKSUM: 4e04bdcb6d82b4ee962f88af717305bedd15bed6
+PODFILE CHECKSUM: af51fd5321df9ab0e74dc4d3ad5dbb7a8dde9db0
 
 COCOAPODS: 1.3.1
