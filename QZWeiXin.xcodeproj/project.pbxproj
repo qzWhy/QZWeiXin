@@ -67,6 +67,11 @@
 		262F7DBB1FB0619100C2D24E /* tx.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 262F7D881FB0619100C2D24E /* tx.jpeg */; };
 		262F7DC21FB0629600C2D24E /* QZHomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F7DBF1FB0629600C2D24E /* QZHomeTableViewController.m */; };
 		262F7DC51FB062E300C2D24E /* QZHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F7DC41FB062E300C2D24E /* QZHomeTableViewCell.m */; };
+		2641BD7A1FBEC88A00B0E568 /* QZDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641BD781FBEC88A00B0E568 /* QZDiscoverViewController.m */; };
+		2641BD7D1FBEC8E600B0E568 /* QZDiscoverViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2641BD7C1FBEC8E600B0E568 /* QZDiscoverViewController.storyboard */; };
+		2641BD841FBEDC0700B0E568 /* QZTimeLineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641BD831FBEDC0700B0E568 /* QZTimeLineTableViewController.m */; };
+		2641BD871FBEDC3000B0E568 /* QZTimeLineCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641BD861FBEDC3000B0E568 /* QZTimeLineCellModel.m */; };
+		2641BD8B1FBEDC5D00B0E568 /* QZTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2641BD8A1FBEDC5D00B0E568 /* QZTimeLineCell.m */; };
 		2642B7411FB941B800941CEA /* QZHomeTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2642B7401FB941B800941CEA /* QZHomeTableViewCellModel.m */; };
 		26446C8F1FBA94C800E09D25 /* QZShortVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26446C8E1FBA94C800E09D25 /* QZShortVideoController.m */; };
 		26446C921FBA984000E09D25 /* QZShortVideoProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26446C911FBA984000E09D25 /* QZShortVideoProgressView.m */; };
@@ -149,6 +154,15 @@
 		262F7DBF1FB0629600C2D24E /* QZHomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZHomeTableViewController.m; sourceTree = "<group>"; };
 		262F7DC31FB062E300C2D24E /* QZHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZHomeTableViewCell.h; sourceTree = "<group>"; };
 		262F7DC41FB062E300C2D24E /* QZHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZHomeTableViewCell.m; sourceTree = "<group>"; };
+		2641BD771FBEC88A00B0E568 /* QZDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZDiscoverViewController.h; sourceTree = "<group>"; };
+		2641BD781FBEC88A00B0E568 /* QZDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZDiscoverViewController.m; sourceTree = "<group>"; };
+		2641BD7C1FBEC8E600B0E568 /* QZDiscoverViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QZDiscoverViewController.storyboard; sourceTree = "<group>"; };
+		2641BD821FBEDC0700B0E568 /* QZTimeLineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTimeLineTableViewController.h; sourceTree = "<group>"; };
+		2641BD831FBEDC0700B0E568 /* QZTimeLineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineTableViewController.m; sourceTree = "<group>"; };
+		2641BD851FBEDC3000B0E568 /* QZTimeLineCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTimeLineCellModel.h; sourceTree = "<group>"; };
+		2641BD861FBEDC3000B0E568 /* QZTimeLineCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineCellModel.m; sourceTree = "<group>"; };
+		2641BD891FBEDC5D00B0E568 /* QZTimeLineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTimeLineCell.h; sourceTree = "<group>"; };
+		2641BD8A1FBEDC5D00B0E568 /* QZTimeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineCell.m; sourceTree = "<group>"; };
 		2642B73F1FB941B800941CEA /* QZHomeTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZHomeTableViewCellModel.h; sourceTree = "<group>"; };
 		2642B7401FB941B800941CEA /* QZHomeTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZHomeTableViewCellModel.m; sourceTree = "<group>"; };
 		26446C8D1FBA94C800E09D25 /* QZShortVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZShortVideoController.h; sourceTree = "<group>"; };
@@ -217,6 +231,7 @@
 				2665E90A1FBD5625003BAEF9 /* Common */,
 				262F7D3E1FB0617100C2D24E /* BaseClasses */,
 				262F7D461FB0617100C2D24E /* Home */,
+				2641BD721FBEC87200B0E568 /* QZDiscover */,
 				262F7D4A1FB0617100C2D24E /* utils */,
 			);
 			path = Classes;
@@ -401,6 +416,94 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2641BD721FBEC87200B0E568 /* QZDiscover */ = {
+			isa = PBXGroup;
+			children = (
+				2641BD7E1FBEDBA000B0E568 /* TimeLineController */,
+				2641BD731FBEC87200B0E568 /* Host */,
+			);
+			path = QZDiscover;
+			sourceTree = "<group>";
+		};
+		2641BD731FBEC87200B0E568 /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				2641BD741FBEC87200B0E568 /* Controller */,
+				2641BD751FBEC87200B0E568 /* Models */,
+				2641BD761FBEC87200B0E568 /* Views */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		2641BD741FBEC87200B0E568 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2641BD771FBEC88A00B0E568 /* QZDiscoverViewController.h */,
+				2641BD781FBEC88A00B0E568 /* QZDiscoverViewController.m */,
+				2641BD7C1FBEC8E600B0E568 /* QZDiscoverViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2641BD751FBEC87200B0E568 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2641BD761FBEC87200B0E568 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2641BD7E1FBEDBA000B0E568 /* TimeLineController */ = {
+			isa = PBXGroup;
+			children = (
+				2641BD7F1FBEDBE400B0E568 /* Controller */,
+				2641BD801FBEDBE400B0E568 /* Model */,
+				2641BD811FBEDBE400B0E568 /* Views */,
+			);
+			path = TimeLineController;
+			sourceTree = "<group>";
+		};
+		2641BD7F1FBEDBE400B0E568 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2641BD821FBEDC0700B0E568 /* QZTimeLineTableViewController.h */,
+				2641BD831FBEDC0700B0E568 /* QZTimeLineTableViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2641BD801FBEDBE400B0E568 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2641BD851FBEDC3000B0E568 /* QZTimeLineCellModel.h */,
+				2641BD861FBEDC3000B0E568 /* QZTimeLineCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2641BD811FBEDBE400B0E568 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2641BD881FBEDC4300B0E568 /* cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2641BD881FBEDC4300B0E568 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				2641BD891FBEDC5D00B0E568 /* QZTimeLineCell.h */,
+				2641BD8A1FBEDC5D00B0E568 /* QZTimeLineCell.m */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		26446C881FBA93E900E09D25 /* QZShortVideoController */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +666,7 @@
 				262F7DA11FB0619100C2D24E /* icon0.jpg in Resources */,
 				262F7D9E1FB0619100C2D24E /* 7.jpg in Resources */,
 				262F7DAB1FB0619100C2D24E /* test0.jpg in Resources */,
+				2641BD7D1FBEC8E600B0E568 /* QZDiscoverViewController.storyboard in Resources */,
 				262F7DAA1FB0619100C2D24E /* Me.xcassets in Resources */,
 				262F7DAF1FB0619100C2D24E /* test4.jpg in Resources */,
 				262F7DAE1FB0619100C2D24E /* test3.jpg in Resources */,
@@ -678,6 +782,7 @@
 				1BA75CBC1FA467C900B99A3F /* main.m in Sources */,
 				262F7D4E1FB0617100C2D24E /* QZBaseTableViewController.m in Sources */,
 				262F7DC51FB062E300C2D24E /* QZHomeTableViewCell.m in Sources */,
+				2641BD8B1FBEDC5D00B0E568 /* QZTimeLineCell.m in Sources */,
 				2665E9161FBD5625003BAEF9 /* QZChatModel.m in Sources */,
 				262F7DC21FB0629600C2D24E /* QZHomeTableViewController.m in Sources */,
 				26446C8F1FBA94C800E09D25 /* QZShortVideoController.m in Sources */,
@@ -686,6 +791,9 @@
 				1BA75CAE1FA467C900B99A3F /* AppDelegate.m in Sources */,
 				26F881C61FB98F61006235D8 /* QZEyeAnimationView.m in Sources */,
 				26446C921FBA984000E09D25 /* QZShortVideoProgressView.m in Sources */,
+				2641BD7A1FBEC88A00B0E568 /* QZDiscoverViewController.m in Sources */,
+				2641BD871FBEDC3000B0E568 /* QZTimeLineCellModel.m in Sources */,
+				2641BD841FBEDC0700B0E568 /* QZTimeLineTableViewController.m in Sources */,
 				2665E9171FBD5625003BAEF9 /* QZChatTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

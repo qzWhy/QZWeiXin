@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>LEETheme.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MLEmojiLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,17 +32,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>28DC962D8679D6F24E3BAA5C6B2932F3</key>
+		<key>3708709390494F7EED81F8DC88AA2FE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4E2226D11DF85602E32838D1DDBA1F84</key>
+		<key>9381AECF3624E52AFC16F80C7CE617EA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>D74EE4FEC2F288FAF0240AD193DB8199</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E78AE3E2949205D839329873C2051EB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,50 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		014761A728E2CD4C9C73B700CA5F0364 /* LEETheme-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F10E56028A0081854B3D47397C648B /* LEETheme-dummy.m */; };
+		0818E7CD546F7215A076F88D4426CF38 /* LEEThemeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 82B5CE1B50A5C671A2B87D9769515801 /* LEEThemeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08464B1A4B57839E5C718346531CAC6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4EE262349108144307D042F49DE193 /* CoreGraphics.framework */; };
-		0B1FED70008CC757A9DB91F5305E811A /* MLEmojiLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8E436AEC75A7DA51D5C3981E61F92C /* MLEmojiLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		28C0A55AD53F79740B7E55B9AF1EE669 /* TTTAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CEE835873DB3E8639002CD1D4C9C972 /* TTTAttributedLabel-dummy.m */; };
-		44E9356BEF1C222357F1A53555243FD6 /* SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 58E136ABB25F40BA8486BA6A2E2D07C2 /* SDAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46467296F9C97378D50AC02B3A30D6CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
-		585E8B6C88DB9E39024D50A9E67A842C /* UIView+SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BF68D870D20F8E0E57F758729CE6B464 /* UIView+SDAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B1FED70008CC757A9DB91F5305E811A /* MLEmojiLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E65A31CA8E32ED35750E9676C9892B5 /* MLEmojiLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28C0A55AD53F79740B7E55B9AF1EE669 /* TTTAttributedLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 520F92C6EE80163C5D65EEF01095D2E7 /* TTTAttributedLabel-dummy.m */; };
 		5A0BB0498D5171D7F084BF9A1B5288A3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59D694A9020F0959A3D1601E40BACC9 /* CoreText.framework */; };
-		5D2021EA6637008AFBD6333F0F1B1900 /* Pods-QZWeiXin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD7958E011D695D21C37356A6A38E7A /* Pods-QZWeiXin-dummy.m */; };
-		6051181EE667E41FA25ED69C46FC4B89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		6576044A7F54AA5CDFA9E53DFEDF85AB /* SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AFEE6D018F14157166A6C0569CE1F2 /* SDAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6C54171A43128D8221CB640406EB2201 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		6C696D04B6203CDC76BED531FEAF9543 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		731F95F81D662BCE48DB23131A724FD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		73CD0638C7D95083D7A24B023B14AFC4 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6839161844FED9D99B67875BAFD5070E /* UIView+SDAutoLayout.m */; };
 		77355B71389EB011471EEDEB9B35FA38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
 		897FA6DDA407FD868436BA97B085E6E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E2B04BC1935A86EB34129AA71C7D83 /* UIKit.framework */; };
-		A32270143E5BA3D8509835D18B2CC3FA /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE24FBDBF809E514652212C72049815 /* TTTAttributedLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B66200E8E83AAE4FB983CF259B158806 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = ED09B69357D623565DE86B4B8818FD48 /* UITableView+SDAutoTableViewCellHeight.m */; };
-		CF5C7780D09C96B1B8EE8B884FAF8935 /* MLEmojiLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6655A5BB2E212D299FCD38B1AEEDB2B /* MLEmojiLabel-dummy.m */; };
-		D21622509111E114DC61EF7B0D8A02A0 /* UITableView+SDAutoTableViewCellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = D1943DCFE963C808141A4BBC0E72C7E6 /* UITableView+SDAutoTableViewCellHeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AA47172C77F2BE87F26B1ABFF151152 /* LEETheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB9ABF82E0DCE5547D47B1F474D13A2 /* LEETheme.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B9502E5F9B10C168EEEF2DB75DCCAEF /* LEETheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B795B8C45FB762EEF4D2B34FE622470 /* LEETheme.m */; };
+		A32270143E5BA3D8509835D18B2CC3FA /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA64C0EA341D3DBEB69B5BC05FBCFA /* TTTAttributedLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ABF06EB7E47FF61335BD44BE4DDCA3D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */; };
+		CF5C7780D09C96B1B8EE8B884FAF8935 /* MLEmojiLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B386DA0EB44C59EC7EFE6FCEABD300B2 /* MLEmojiLabel-dummy.m */; };
+		D326986A2297CFDB61048892E3A40EBA /* Pods-QZWeiXin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD7958E011D695D21C37356A6A38E7A /* Pods-QZWeiXin-dummy.m */; };
+		D52221277905A53224BA16EBB784C0E2 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C8465F4FC08E588F8A7C853C168216 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		D85100A3F5CD5B682B28150D579BAB23 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */; };
-		DA56BF46EC57938885CF1BDAE69F1EDA /* MLEmojiLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E4F509228539434C117E2264814B1B /* MLEmojiLabel.m */; };
-		EB53512473AD6E49DAACB8BB02D38400 /* SDAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B66495798F1BD9821A9E37963F579EC /* SDAutoLayout-dummy.m */; };
-		F0EED9A8352E143EC39CE640EB63BC47 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A06B0E406839B851F8B62C35375680 /* UIView+SDAutoLayout.m */; };
-		F641360EE494A07999CE0BFAA8D7BA5C /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0500E0D76F800748A806D149D8EE8721 /* TTTAttributedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA56BF46EC57938885CF1BDAE69F1EDA /* MLEmojiLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81ECA708C7E01E27F24D9B5CEEE65848 /* MLEmojiLabel.m */; };
+		E8B9D2CD817DAACA530C734C7CF05BAB /* UITableView+SDAutoTableViewCellHeight.h in Headers */ = {isa = PBXBuildFile; fileRef = 746527D6ED93E09762585EDD1AB93C7A /* UITableView+SDAutoTableViewCellHeight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAC162ABBA9665B35B5E326F5DE0A7B9 /* SDAutoLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8758E3784D77660A68F50F8D54931087 /* SDAutoLayout-dummy.m */; };
+		ECA046A78B6B0890777478F40E95DBCF /* UIView+SDAutoLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FCC544E39DE3F270E6A34EEA995CC770 /* UIView+SDAutoLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F641360EE494A07999CE0BFAA8D7BA5C /* TTTAttributedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = EE34AE9A1FAC6D255B85AAA575E0D5F0 /* TTTAttributedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		321CE9F845B075BC7318953FE478F561 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4E2226D11DF85602E32838D1DDBA1F84;
-			remoteInfo = SDAutoLayout;
-		};
-		A7905C1579A2AD3E13B8319A0A6A11EA /* PBXContainerItemProxy */ = {
+		461FEFAA5F78912B10D84FBAEF74594B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E7E1650ED95BDF6C0F1BB3475031D7C5;
 			remoteInfo = TTTAttributedLabel;
 		};
-		DAABC62249CDFB566CF25CF71F8B5899 /* PBXContainerItemProxy */ = {
+		7064567F94C6CE9373FAAF3B3B50D48A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D74EE4FEC2F288FAF0240AD193DB8199;
 			remoteInfo = MLEmojiLabel;
+		};
+		9BAFB500728CB9DB72C01AF65CEB18F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E78AE3E2949205D839329873C2051EB0;
+			remoteInfo = SDAutoLayout;
+		};
+		D9186BDC86DE1996B9747D51DE675801 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3708709390494F7EED81F8DC88AA2FE7;
+			remoteInfo = LEETheme;
 		};
 		EDA29FA29C9DD38A3C337FF9DFBE557E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -62,69 +74,84 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0500E0D76F800748A806D149D8EE8721 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
-		05A11AE174A6F0853136717BE052DEEF /* MLEmojiLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLEmojiLabel.xcconfig; sourceTree = "<group>"; };
+		05DFA847FCBDBEFAFAE8B9DFBAE8ACAD /* libLEETheme.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLEETheme.a; path = libLEETheme.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB22C5C11C1C0493F3BD158FCEA37F3 /* Pods-QZWeiXin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QZWeiXin.release.xcconfig"; sourceTree = "<group>"; };
-		1B66495798F1BD9821A9E37963F579EC /* SDAutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDAutoLayout-dummy.m"; sourceTree = "<group>"; };
-		29A06B0E406839B851F8B62C35375680 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SDAutoLayout.m"; path = "SDAutoLayoutDemo/SDAutoLayout/UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
-		2A949EBA0FB1E5572F570A77130A870D /* MLEmojiLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLEmojiLabel-prefix.pch"; sourceTree = "<group>"; };
+		1E6143C9A5880ABD6A7A9A67DCD2FF9D /* MLEmoji_Expression.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = MLEmoji_Expression.plist; path = Classes/MLEmoji_Expression.plist; sourceTree = "<group>"; };
 		2C0A62949E81F8DB82C4D874FEBB592E /* Pods-QZWeiXin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QZWeiXin-acknowledgements.plist"; sourceTree = "<group>"; };
+		32B807803CEA3FFF2A356DA6CE46FC18 /* MLEmojiLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLEmojiLabel-prefix.pch"; sourceTree = "<group>"; };
 		32E2B04BC1935A86EB34129AA71C7D83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3E8E436AEC75A7DA51D5C3981E61F92C /* MLEmojiLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLEmojiLabel.h; path = Classes/MLEmojiLabel.h; sourceTree = "<group>"; };
+		41F10E56028A0081854B3D47397C648B /* LEETheme-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LEETheme-dummy.m"; sourceTree = "<group>"; };
+		42DAE6C44EDE9947BC8F9936CDB78F34 /* MLEmoji_ExpressionImage.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = MLEmoji_ExpressionImage.plist; path = Classes/MLEmoji_ExpressionImage.plist; sourceTree = "<group>"; };
 		470B4F0909237841DD06F73E48F36211 /* Pods-QZWeiXin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QZWeiXin-acknowledgements.markdown"; sourceTree = "<group>"; };
-		47E4F509228539434C117E2264814B1B /* MLEmojiLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLEmojiLabel.m; path = Classes/MLEmojiLabel.m; sourceTree = "<group>"; };
-		4AA39295D25A88DF5D54058AECFD326F /* gifexpression.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = gifexpression.bundle; path = Classes/MLEmoji_Expression.bundle/gifexpression.bundle; sourceTree = "<group>"; };
-		58E136ABB25F40BA8486BA6A2E2D07C2 /* SDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAutoLayout.h; path = SDAutoLayoutDemo/SDAutoLayout/SDAutoLayout.h; sourceTree = "<group>"; };
-		5D3203153E5F74EA8B94F169E5D0B883 /* MLEmoji_ExpressionImage.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = MLEmoji_ExpressionImage.plist; path = Classes/MLEmoji_ExpressionImage.plist; sourceTree = "<group>"; };
+		4E65A31CA8E32ED35750E9676C9892B5 /* MLEmojiLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLEmojiLabel.h; path = Classes/MLEmojiLabel.h; sourceTree = "<group>"; };
+		520F92C6EE80163C5D65EEF01095D2E7 /* TTTAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTTAttributedLabel-dummy.m"; sourceTree = "<group>"; };
+		53512CBB619382F4D77BDCEF2E6EFBEE /* MLEmojiLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLEmojiLabel.xcconfig; sourceTree = "<group>"; };
+		5915C93F869616EB3E8289ECAC80067B /* TTTAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
+		5B795B8C45FB762EEF4D2B34FE622470 /* LEETheme.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LEETheme.m; path = LEETheme/LEETheme.m; sourceTree = "<group>"; };
 		63FB7227B3389E8A8F7469143510603F /* Pods-QZWeiXin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QZWeiXin.debug.xcconfig"; sourceTree = "<group>"; };
-		6AFC7E09B53B57764EF67790EBCDC0C4 /* SDAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDAutoLayout-prefix.pch"; sourceTree = "<group>"; };
-		6B68CC406E23A067CB9D3AE01BA59B83 /* libPods-QZWeiXin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-QZWeiXin.a"; path = "libPods-QZWeiXin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6839161844FED9D99B67875BAFD5070E /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SDAutoLayout.m"; path = "SDAutoLayoutDemo/SDAutoLayout/UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		69E434B44DF73CF14BC95B8ED714D189 /* MLEmoji_Expression.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MLEmoji_Expression.bundle; path = Classes/MLEmoji_Expression.bundle; sourceTree = "<group>"; };
 		6CFC50AAA2EB88D0A9E4B6C6C776B4D5 /* Pods-QZWeiXin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QZWeiXin-frameworks.sh"; sourceTree = "<group>"; };
+		746527D6ED93E09762585EDD1AB93C7A /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+SDAutoTableViewCellHeight.h"; path = "SDAutoLayoutDemo/SDAutoLayout/UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
 		75724AFC8DB229902C200CFD229B7576 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		7CD7958E011D695D21C37356A6A38E7A /* Pods-QZWeiXin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QZWeiXin-dummy.m"; sourceTree = "<group>"; };
 		7E4EE262349108144307D042F49DE193 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		8CE633F4760F1751A46CDC8A1678C94D /* libMLEmojiLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMLEmojiLabel.a; path = libMLEmojiLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DE24FBDBF809E514652212C72049815 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = TTTAttributedLabel/TTTAttributedLabel.m; sourceTree = "<group>"; };
-		92440F0A8F10683D67859D327428D54F /* libTTTAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTTTAttributedLabel.a; path = libTTTAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		816A5CA953786004B16C9F74DA70F0E6 /* SDAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDAutoLayout.xcconfig; sourceTree = "<group>"; };
+		81ECA708C7E01E27F24D9B5CEEE65848 /* MLEmojiLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLEmojiLabel.m; path = Classes/MLEmojiLabel.m; sourceTree = "<group>"; };
+		82B5CE1B50A5C671A2B87D9769515801 /* LEEThemeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LEEThemeHelper.h; path = LEETheme/LEEThemeHelper.h; sourceTree = "<group>"; };
+		84F1230D42F01E88337BF19210BF8FD4 /* libTTTAttributedLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTTTAttributedLabel.a; path = libTTTAttributedLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8758E3784D77660A68F50F8D54931087 /* SDAutoLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDAutoLayout-dummy.m"; sourceTree = "<group>"; };
+		8AB9ABF82E0DCE5547D47B1F474D13A2 /* LEETheme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LEETheme.h; path = LEETheme/LEETheme.h; sourceTree = "<group>"; };
+		8EDA64C0EA341D3DBEB69B5BC05FBCFA /* TTTAttributedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = TTTAttributedLabel/TTTAttributedLabel.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9CEE835873DB3E8639002CD1D4C9C972 /* TTTAttributedLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTTAttributedLabel-dummy.m"; sourceTree = "<group>"; };
-		A8C1F76F063E03973F4B81DF16E95AFC /* TTTAttributedLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel-prefix.pch"; sourceTree = "<group>"; };
-		ABC8A0B0C328E2084BBBC3B75F22442B /* TTTAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTTAttributedLabel.xcconfig; sourceTree = "<group>"; };
-		B5D5CF60170548433966C0CCC52FAE9B /* MLEmoji_Expression.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = MLEmoji_Expression.bundle; path = Classes/MLEmoji_Expression.bundle; sourceTree = "<group>"; };
-		B6655A5BB2E212D299FCD38B1AEEDB2B /* MLEmojiLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLEmojiLabel-dummy.m"; sourceTree = "<group>"; };
-		BF68D870D20F8E0E57F758729CE6B464 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SDAutoLayout.h"; path = "SDAutoLayoutDemo/SDAutoLayout/UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
-		C194D6924B2DD795D03A8C83E6825EF7 /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDAutoLayout.a; path = libSDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C911E01D2FC02CBFD73850C2141EE46E /* MLEmoji_Expression.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = MLEmoji_Expression.plist; path = Classes/MLEmoji_Expression.plist; sourceTree = "<group>"; };
-		D1943DCFE963C808141A4BBC0E72C7E6 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+SDAutoTableViewCellHeight.h"; path = "SDAutoLayoutDemo/SDAutoLayout/UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
-		E8C3183C1B895C08E304ACE45D2ADB6D /* SDAutoLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDAutoLayout.xcconfig; sourceTree = "<group>"; };
+		97041463C6D27A7AF21F711FFD29E2F1 /* LEETheme.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LEETheme.xcconfig; sourceTree = "<group>"; };
+		AB18EF210F2BB4207798E5767B56F289 /* TTTAttributedLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTTAttributedLabel.xcconfig; sourceTree = "<group>"; };
+		AB3CCF52B813057D8FA088DB827847C3 /* gifexpression.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = gifexpression.bundle; path = Classes/MLEmoji_Expression.bundle/gifexpression.bundle; sourceTree = "<group>"; };
+		B386DA0EB44C59EC7EFE6FCEABD300B2 /* MLEmojiLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLEmojiLabel-dummy.m"; sourceTree = "<group>"; };
+		BC567A662F12A7DB3B895009A72F9EF9 /* libPods-QZWeiXin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-QZWeiXin.a"; path = "libPods-QZWeiXin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AFEE6D018F14157166A6C0569CE1F2 /* SDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAutoLayout.h; path = SDAutoLayoutDemo/SDAutoLayout/SDAutoLayout.h; sourceTree = "<group>"; };
+		D6C8465F4FC08E588F8A7C853C168216 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+SDAutoTableViewCellHeight.m"; path = "SDAutoLayoutDemo/SDAutoLayout/UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		E1443CFF87A3CD48D2F86FF7F8F17F44 /* libSDAutoLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSDAutoLayout.a; path = libSDAutoLayout.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB4AF075EF0ACCDAC059FBC6BCBD5BF /* Pods-QZWeiXin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QZWeiXin-resources.sh"; sourceTree = "<group>"; };
-		ED09B69357D623565DE86B4B8818FD48 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+SDAutoTableViewCellHeight.m"; path = "SDAutoLayoutDemo/SDAutoLayout/UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		ED72BE7B9915FE2C8B2B843111C1439B /* SDAutoLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDAutoLayout-prefix.pch"; sourceTree = "<group>"; };
+		EE34AE9A1FAC6D255B85AAA575E0D5F0 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = TTTAttributedLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
+		F00DB7B002B8CE4595C3392BF387C619 /* libMLEmojiLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMLEmojiLabel.a; path = libMLEmojiLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19EC56112D81FD9C4139AFCA0FB381E /* LEETheme-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LEETheme-prefix.pch"; sourceTree = "<group>"; };
 		F59D694A9020F0959A3D1601E40BACC9 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		FCC544E39DE3F270E6A34EEA995CC770 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SDAutoLayout.h"; path = "SDAutoLayoutDemo/SDAutoLayout/UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
 		FF58CC92310C0395FBA5E5C639C12F03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		172F914BE13978B0E1F85313B7E1E489 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF06EB7E47FF61335BD44BE4DDCA3D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38158A06643F96A6013C39D70A28A061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731F95F81D662BCE48DB23131A724FD2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E758C05D7CBC2C3AF5D6AD3C176CB21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C696D04B6203CDC76BED531FEAF9543 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		70F84B22185878BD225D14A48370F0A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6C54171A43128D8221CB640406EB2201 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9407807F8A0FE3087DF0EE9CC3CDDBCF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6051181EE667E41FA25ED69C46FC4B89 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B0ED5571EFF19C6E20466B9A47AC94F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46467296F9C97378D50AC02B3A30D6CF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +170,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		036BFE4E6E92DDA2161CB5E86D6AB0DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05DFA847FCBDBEFAFAE8B9DFBAE8ACAD /* libLEETheme.a */,
+				F00DB7B002B8CE4595C3392BF387C619 /* libMLEmojiLabel.a */,
+				BC567A662F12A7DB3B895009A72F9EF9 /* libPods-QZWeiXin.a */,
+				E1443CFF87A3CD48D2F86FF7F8F17F44 /* libSDAutoLayout.a */,
+				84F1230D42F01E88337BF19210BF8FD4 /* libTTTAttributedLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		205B816F607E0D61C0E4AC62A2788CA2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97041463C6D27A7AF21F711FFD29E2F1 /* LEETheme.xcconfig */,
+				41F10E56028A0081854B3D47397C648B /* LEETheme-dummy.m */,
+				F19EC56112D81FD9C4139AFCA0FB381E /* LEETheme-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LEETheme";
+			sourceTree = "<group>";
+		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,40 +201,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2A1D420A9EBD332FA043836CD07E1145 /* Support Files */ = {
+		27D93ED208FD74CE3B17E8A6C2D82C66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				05A11AE174A6F0853136717BE052DEEF /* MLEmojiLabel.xcconfig */,
-				B6655A5BB2E212D299FCD38B1AEEDB2B /* MLEmojiLabel-dummy.m */,
-				2A949EBA0FB1E5572F570A77130A870D /* MLEmojiLabel-prefix.pch */,
+				DC412198BD50B32B2FBF3D0F0E58C73C /* LEETheme */,
+				5E2995BAC74830FE4838C47CA6D01FCE /* MLEmojiLabel */,
+				DEFF6DBECCCDB34A140DA420B56BAA22 /* SDAutoLayout */,
+				F26989B7A56E986AFA9588BB49A86D80 /* TTTAttributedLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		490F7DBDF9590D169576FF9E0003DC2B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				816A5CA953786004B16C9F74DA70F0E6 /* SDAutoLayout.xcconfig */,
+				8758E3784D77660A68F50F8D54931087 /* SDAutoLayout-dummy.m */,
+				ED72BE7B9915FE2C8B2B843111C1439B /* SDAutoLayout-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/MLEmojiLabel";
+			path = "../Target Support Files/SDAutoLayout";
 			sourceTree = "<group>";
 		};
-		5A3B69A0F3B3EAA5DAA241E91CEE9D70 /* Resources */ = {
+		5E2995BAC74830FE4838C47CA6D01FCE /* MLEmojiLabel */ = {
 			isa = PBXGroup;
 			children = (
-				4AA39295D25A88DF5D54058AECFD326F /* gifexpression.bundle */,
-				B5D5CF60170548433966C0CCC52FAE9B /* MLEmoji_Expression.bundle */,
-				C911E01D2FC02CBFD73850C2141EE46E /* MLEmoji_Expression.plist */,
-				5D3203153E5F74EA8B94F169E5D0B883 /* MLEmoji_ExpressionImage.plist */,
+				4E65A31CA8E32ED35750E9676C9892B5 /* MLEmojiLabel.h */,
+				81ECA708C7E01E27F24D9B5CEEE65848 /* MLEmojiLabel.m */,
+				BE4DD72B349DC46B380EB235CB1F8EE3 /* Resources */,
+				AD0FD4C6C330854F62C3A25C3AE3FABA /* Support Files */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		5ED249CAAE821E54109724EAF25913F3 /* SDAutoLayout */ = {
-			isa = PBXGroup;
-			children = (
-				58E136ABB25F40BA8486BA6A2E2D07C2 /* SDAutoLayout.h */,
-				D1943DCFE963C808141A4BBC0E72C7E6 /* UITableView+SDAutoTableViewCellHeight.h */,
-				ED09B69357D623565DE86B4B8818FD48 /* UITableView+SDAutoTableViewCellHeight.m */,
-				BF68D870D20F8E0E57F758729CE6B464 /* UIView+SDAutoLayout.h */,
-				29A06B0E406839B851F8B62C35375680 /* UIView+SDAutoLayout.m */,
-				7569DBEACB0D33E32EFFA1ABAF8A0F85 /* Support Files */,
-			);
-			name = SDAutoLayout;
-			path = SDAutoLayout;
+			name = MLEmojiLabel;
+			path = MLEmojiLabel;
 			sourceTree = "<group>";
 		};
 		6597D6D1D69417EE94FAE3220D194FBD /* Pods-QZWeiXin */ = {
@@ -202,28 +250,6 @@
 			path = "Target Support Files/Pods-QZWeiXin";
 			sourceTree = "<group>";
 		};
-		703CA94F56A6E4559E2AD43A2603E69C /* TTTAttributedLabel */ = {
-			isa = PBXGroup;
-			children = (
-				0500E0D76F800748A806D149D8EE8721 /* TTTAttributedLabel.h */,
-				8DE24FBDBF809E514652212C72049815 /* TTTAttributedLabel.m */,
-				DFD7B730D8A734FFB7382EDE719BAD30 /* Support Files */,
-			);
-			name = TTTAttributedLabel;
-			path = TTTAttributedLabel;
-			sourceTree = "<group>";
-		};
-		7569DBEACB0D33E32EFFA1ABAF8A0F85 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E8C3183C1B895C08E304ACE45D2ADB6D /* SDAutoLayout.xcconfig */,
-				1B66495798F1BD9821A9E37963F579EC /* SDAutoLayout-dummy.m */,
-				6AFC7E09B53B57764EF67790EBCDC0C4 /* SDAutoLayout-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SDAutoLayout";
-			sourceTree = "<group>";
-		};
 		76AFCBDB4A45325FD001DF45123F8A7D /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,54 +263,80 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				DD42FA0AA5A51109E7DD8BFFF2A5B845 /* Pods */,
-				F63E01546799BD4D3834CC82C75EA8D1 /* Products */,
+				27D93ED208FD74CE3B17E8A6C2D82C66 /* Pods */,
+				036BFE4E6E92DDA2161CB5E86D6AB0DE /* Products */,
 				76AFCBDB4A45325FD001DF45123F8A7D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D014948E241F67B385ACDDB0A1A24ED2 /* MLEmojiLabel */ = {
+		AD0FD4C6C330854F62C3A25C3AE3FABA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E8E436AEC75A7DA51D5C3981E61F92C /* MLEmojiLabel.h */,
-				47E4F509228539434C117E2264814B1B /* MLEmojiLabel.m */,
-				5A3B69A0F3B3EAA5DAA241E91CEE9D70 /* Resources */,
-				2A1D420A9EBD332FA043836CD07E1145 /* Support Files */,
+				53512CBB619382F4D77BDCEF2E6EFBEE /* MLEmojiLabel.xcconfig */,
+				B386DA0EB44C59EC7EFE6FCEABD300B2 /* MLEmojiLabel-dummy.m */,
+				32B807803CEA3FFF2A356DA6CE46FC18 /* MLEmojiLabel-prefix.pch */,
 			);
-			name = MLEmojiLabel;
-			path = MLEmojiLabel;
+			name = "Support Files";
+			path = "../Target Support Files/MLEmojiLabel";
 			sourceTree = "<group>";
 		};
-		DD42FA0AA5A51109E7DD8BFFF2A5B845 /* Pods */ = {
+		BE4DD72B349DC46B380EB235CB1F8EE3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D014948E241F67B385ACDDB0A1A24ED2 /* MLEmojiLabel */,
-				5ED249CAAE821E54109724EAF25913F3 /* SDAutoLayout */,
-				703CA94F56A6E4559E2AD43A2603E69C /* TTTAttributedLabel */,
+				AB3CCF52B813057D8FA088DB827847C3 /* gifexpression.bundle */,
+				69E434B44DF73CF14BC95B8ED714D189 /* MLEmoji_Expression.bundle */,
+				1E6143C9A5880ABD6A7A9A67DCD2FF9D /* MLEmoji_Expression.plist */,
+				42DAE6C44EDE9947BC8F9936CDB78F34 /* MLEmoji_ExpressionImage.plist */,
 			);
-			name = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		DFD7B730D8A734FFB7382EDE719BAD30 /* Support Files */ = {
+		D1805E8DAD28C0B46A4CA3CC0F580774 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ABC8A0B0C328E2084BBBC3B75F22442B /* TTTAttributedLabel.xcconfig */,
-				9CEE835873DB3E8639002CD1D4C9C972 /* TTTAttributedLabel-dummy.m */,
-				A8C1F76F063E03973F4B81DF16E95AFC /* TTTAttributedLabel-prefix.pch */,
+				AB18EF210F2BB4207798E5767B56F289 /* TTTAttributedLabel.xcconfig */,
+				520F92C6EE80163C5D65EEF01095D2E7 /* TTTAttributedLabel-dummy.m */,
+				5915C93F869616EB3E8289ECAC80067B /* TTTAttributedLabel-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/TTTAttributedLabel";
 			sourceTree = "<group>";
 		};
-		F63E01546799BD4D3834CC82C75EA8D1 /* Products */ = {
+		DC412198BD50B32B2FBF3D0F0E58C73C /* LEETheme */ = {
 			isa = PBXGroup;
 			children = (
-				8CE633F4760F1751A46CDC8A1678C94D /* libMLEmojiLabel.a */,
-				6B68CC406E23A067CB9D3AE01BA59B83 /* libPods-QZWeiXin.a */,
-				C194D6924B2DD795D03A8C83E6825EF7 /* libSDAutoLayout.a */,
-				92440F0A8F10683D67859D327428D54F /* libTTTAttributedLabel.a */,
+				8AB9ABF82E0DCE5547D47B1F474D13A2 /* LEETheme.h */,
+				5B795B8C45FB762EEF4D2B34FE622470 /* LEETheme.m */,
+				82B5CE1B50A5C671A2B87D9769515801 /* LEEThemeHelper.h */,
+				205B816F607E0D61C0E4AC62A2788CA2 /* Support Files */,
 			);
-			name = Products;
+			name = LEETheme;
+			path = LEETheme;
+			sourceTree = "<group>";
+		};
+		DEFF6DBECCCDB34A140DA420B56BAA22 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D4AFEE6D018F14157166A6C0569CE1F2 /* SDAutoLayout.h */,
+				746527D6ED93E09762585EDD1AB93C7A /* UITableView+SDAutoTableViewCellHeight.h */,
+				D6C8465F4FC08E588F8A7C853C168216 /* UITableView+SDAutoTableViewCellHeight.m */,
+				FCC544E39DE3F270E6A34EEA995CC770 /* UIView+SDAutoLayout.h */,
+				6839161844FED9D99B67875BAFD5070E /* UIView+SDAutoLayout.m */,
+				490F7DBDF9590D169576FF9E0003DC2B /* Support Files */,
+			);
+			name = SDAutoLayout;
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
+		F26989B7A56E986AFA9588BB49A86D80 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				EE34AE9A1FAC6D255B85AAA575E0D5F0 /* TTTAttributedLabel.h */,
+				8EDA64C0EA341D3DBEB69B5BC05FBCFA /* TTTAttributedLabel.m */,
+				D1805E8DAD28C0B46A4CA3CC0F580774 /* Support Files */,
+			);
+			name = TTTAttributedLabel;
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 		FD3B6667F06509663DDD01426DEE151E /* iOS */ = {
@@ -302,13 +354,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3A468C27D34F3C593D0CF29C6D4996A1 /* Headers */ = {
+		1D22458F84B9DAB8111A2A9479E09BBC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44E9356BEF1C222357F1A53555243FD6 /* SDAutoLayout.h in Headers */,
-				D21622509111E114DC61EF7B0D8A02A0 /* UITableView+SDAutoTableViewCellHeight.h in Headers */,
-				585E8B6C88DB9E39024D50A9E67A842C /* UIView+SDAutoLayout.h in Headers */,
+				8AA47172C77F2BE87F26B1ABFF151152 /* LEETheme.h in Headers */,
+				0818E7CD546F7215A076F88D4426CF38 /* LEEThemeHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +368,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F641360EE494A07999CE0BFAA8D7BA5C /* TTTAttributedLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76F043B66F99B82E5170AC6038569235 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6576044A7F54AA5CDFA9E53DFEDF85AB /* SDAutoLayout.h in Headers */,
+				E8B9D2CD817DAACA530C734C7CF05BAB /* UITableView+SDAutoTableViewCellHeight.h in Headers */,
+				ECA046A78B6B0890777478F40E95DBCF /* UIView+SDAutoLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,40 +392,41 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		28DC962D8679D6F24E3BAA5C6B2932F3 /* Pods-QZWeiXin */ = {
+		3708709390494F7EED81F8DC88AA2FE7 /* LEETheme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55CD898985C2EBE3F952FBFB94F2796E /* Build configuration list for PBXNativeTarget "Pods-QZWeiXin" */;
+			buildConfigurationList = 59C7FC01CCCC28AA6360F2E1E1DCD4A6 /* Build configuration list for PBXNativeTarget "LEETheme" */;
 			buildPhases = (
-				3DEE263CCC7577135E2EF8D2AE3A6002 /* Sources */,
-				9B0ED5571EFF19C6E20466B9A47AC94F /* Frameworks */,
+				860ED06A19E531B5CAC8820347D85C35 /* Sources */,
+				38158A06643F96A6013C39D70A28A061 /* Frameworks */,
+				1D22458F84B9DAB8111A2A9479E09BBC /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				58FF9EC39140E40DE3EFE6E5583D0FD0 /* PBXTargetDependency */,
-				08E0A9FD3F79C3ABF189E0C613DC0616 /* PBXTargetDependency */,
-				661D871571307CB27BEBC53CD13D5B5A /* PBXTargetDependency */,
+			);
+			name = LEETheme;
+			productName = LEETheme;
+			productReference = 05DFA847FCBDBEFAFAE8B9DFBAE8ACAD /* libLEETheme.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9381AECF3624E52AFC16F80C7CE617EA /* Pods-QZWeiXin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF006043084D057BBEDDAAAA390FA3E /* Build configuration list for PBXNativeTarget "Pods-QZWeiXin" */;
+			buildPhases = (
+				32AD2FD604CAC1D2A41301B0FD218DCA /* Sources */,
+				172F914BE13978B0E1F85313B7E1E489 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DE06484B57817FAAFC282E40C7477B2 /* PBXTargetDependency */,
+				995452306A4AA4E31B4B882A2F9B185C /* PBXTargetDependency */,
+				E5FD460E5D9040E6A9129281C95986C9 /* PBXTargetDependency */,
+				DFB866718EDC6B05DCC29243F776C9B0 /* PBXTargetDependency */,
 			);
 			name = "Pods-QZWeiXin";
 			productName = "Pods-QZWeiXin";
-			productReference = 6B68CC406E23A067CB9D3AE01BA59B83 /* libPods-QZWeiXin.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		4E2226D11DF85602E32838D1DDBA1F84 /* SDAutoLayout */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E019482CCFFC5EE6E7BE5A1C6FD7C171 /* Build configuration list for PBXNativeTarget "SDAutoLayout" */;
-			buildPhases = (
-				1E7F5012E4BAF3CA49902C8D0FBCC481 /* Sources */,
-				9407807F8A0FE3087DF0EE9CC3CDDBCF /* Frameworks */,
-				3A468C27D34F3C593D0CF29C6D4996A1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SDAutoLayout;
-			productName = SDAutoLayout;
-			productReference = C194D6924B2DD795D03A8C83E6825EF7 /* libSDAutoLayout.a */;
+			productReference = BC567A662F12A7DB3B895009A72F9EF9 /* libPods-QZWeiXin.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D74EE4FEC2F288FAF0240AD193DB8199 /* MLEmojiLabel */ = {
@@ -382,7 +444,24 @@
 			);
 			name = MLEmojiLabel;
 			productName = MLEmojiLabel;
-			productReference = 8CE633F4760F1751A46CDC8A1678C94D /* libMLEmojiLabel.a */;
+			productReference = F00DB7B002B8CE4595C3392BF387C619 /* libMLEmojiLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E78AE3E2949205D839329873C2051EB0 /* SDAutoLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99C95F2CD3B09DFDFEE4CAE4EFB52F6D /* Build configuration list for PBXNativeTarget "SDAutoLayout" */;
+			buildPhases = (
+				5E48386FE1A305283CDCA78B16127EE9 /* Sources */,
+				6E758C05D7CBC2C3AF5D6AD3C176CB21 /* Frameworks */,
+				76F043B66F99B82E5170AC6038569235 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDAutoLayout;
+			productName = SDAutoLayout;
+			productReference = E1443CFF87A3CD48D2F86FF7F8F17F44 /* libSDAutoLayout.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E7E1650ED95BDF6C0F1BB3475031D7C5 /* TTTAttributedLabel */ = {
@@ -399,7 +478,7 @@
 			);
 			name = TTTAttributedLabel;
 			productName = TTTAttributedLabel;
-			productReference = 92440F0A8F10683D67859D327428D54F /* libTTTAttributedLabel.a */;
+			productReference = 84F1230D42F01E88337BF19210BF8FD4 /* libTTTAttributedLabel.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -419,29 +498,20 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F63E01546799BD4D3834CC82C75EA8D1 /* Products */;
+			productRefGroup = 036BFE4E6E92DDA2161CB5E86D6AB0DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3708709390494F7EED81F8DC88AA2FE7 /* LEETheme */,
 				D74EE4FEC2F288FAF0240AD193DB8199 /* MLEmojiLabel */,
-				28DC962D8679D6F24E3BAA5C6B2932F3 /* Pods-QZWeiXin */,
-				4E2226D11DF85602E32838D1DDBA1F84 /* SDAutoLayout */,
+				9381AECF3624E52AFC16F80C7CE617EA /* Pods-QZWeiXin */,
+				E78AE3E2949205D839329873C2051EB0 /* SDAutoLayout */,
 				E7E1650ED95BDF6C0F1BB3475031D7C5 /* TTTAttributedLabel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1E7F5012E4BAF3CA49902C8D0FBCC481 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EB53512473AD6E49DAACB8BB02D38400 /* SDAutoLayout-dummy.m in Sources */,
-				B66200E8E83AAE4FB983CF259B158806 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
-				F0EED9A8352E143EC39CE640EB63BC47 /* UIView+SDAutoLayout.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		24C3D4E1FB39339CC2094ED537E62FE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -460,34 +530,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DEE263CCC7577135E2EF8D2AE3A6002 /* Sources */ = {
+		32AD2FD604CAC1D2A41301B0FD218DCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D2021EA6637008AFBD6333F0F1B1900 /* Pods-QZWeiXin-dummy.m in Sources */,
+				D326986A2297CFDB61048892E3A40EBA /* Pods-QZWeiXin-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E48386FE1A305283CDCA78B16127EE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAC162ABBA9665B35B5E326F5DE0A7B9 /* SDAutoLayout-dummy.m in Sources */,
+				D52221277905A53224BA16EBB784C0E2 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				73CD0638C7D95083D7A24B023B14AFC4 /* UIView+SDAutoLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		860ED06A19E531B5CAC8820347D85C35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014761A728E2CD4C9C73B700CA5F0364 /* LEETheme-dummy.m in Sources */,
+				8B9502E5F9B10C168EEEF2DB75DCCAEF /* LEETheme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		08E0A9FD3F79C3ABF189E0C613DC0616 /* PBXTargetDependency */ = {
+		6DE06484B57817FAAFC282E40C7477B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SDAutoLayout;
-			target = 4E2226D11DF85602E32838D1DDBA1F84 /* SDAutoLayout */;
-			targetProxy = 321CE9F845B075BC7318953FE478F561 /* PBXContainerItemProxy */;
+			name = LEETheme;
+			target = 3708709390494F7EED81F8DC88AA2FE7 /* LEETheme */;
+			targetProxy = D9186BDC86DE1996B9747D51DE675801 /* PBXContainerItemProxy */;
 		};
-		58FF9EC39140E40DE3EFE6E5583D0FD0 /* PBXTargetDependency */ = {
+		995452306A4AA4E31B4B882A2F9B185C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MLEmojiLabel;
 			target = D74EE4FEC2F288FAF0240AD193DB8199 /* MLEmojiLabel */;
-			targetProxy = DAABC62249CDFB566CF25CF71F8B5899 /* PBXContainerItemProxy */;
-		};
-		661D871571307CB27BEBC53CD13D5B5A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TTTAttributedLabel;
-			target = E7E1650ED95BDF6C0F1BB3475031D7C5 /* TTTAttributedLabel */;
-			targetProxy = A7905C1579A2AD3E13B8319A0A6A11EA /* PBXContainerItemProxy */;
+			targetProxy = 7064567F94C6CE9373FAAF3B3B50D48A /* PBXContainerItemProxy */;
 		};
 		CCBE38EA189F6E0C71235763ED41C039 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -495,33 +578,24 @@
 			target = E7E1650ED95BDF6C0F1BB3475031D7C5 /* TTTAttributedLabel */;
 			targetProxy = EDA29FA29C9DD38A3C337FF9DFBE557E /* PBXContainerItemProxy */;
 		};
+		DFB866718EDC6B05DCC29243F776C9B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTTAttributedLabel;
+			target = E7E1650ED95BDF6C0F1BB3475031D7C5 /* TTTAttributedLabel */;
+			targetProxy = 461FEFAA5F78912B10D84FBAEF74594B /* PBXContainerItemProxy */;
+		};
+		E5FD460E5D9040E6A9129281C95986C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDAutoLayout;
+			target = E78AE3E2949205D839329873C2051EB0 /* SDAutoLayout */;
+			targetProxy = 9BAFB500728CB9DB72C01AF65CEB18F5 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1482A0CFEF08B11C8A230049E7EF1F1A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8C3183C1B895C08E304ACE45D2ADB6D /* SDAutoLayout.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SDAutoLayout/SDAutoLayout-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		1D03D84032909057790B7B837E728C7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABC8A0B0C328E2084BBBC3B75F22442B /* TTTAttributedLabel.xcconfig */;
+			baseConfigurationReference = AB18EF210F2BB4207798E5767B56F289 /* TTTAttributedLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -540,9 +614,52 @@
 			};
 			name = Debug;
 		};
+		245345EDB87433C21DA609B66FCBEA9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB22C5C11C1C0493F3BD158FCEA37F3 /* Pods-QZWeiXin.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AF6C5F5FFDA8B6219E510AB00A2342E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97041463C6D27A7AF21F711FFD29E2F1 /* LEETheme.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LEETheme/LEETheme-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		59F8D520969D18ADFBC7A840E3C7A51F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05A11AE174A6F0853136717BE052DEEF /* MLEmojiLabel.xcconfig */;
+			baseConfigurationReference = 53512CBB619382F4D77BDCEF2E6EFBEE /* MLEmojiLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -563,7 +680,7 @@
 		};
 		775DA55947EFFF0A614CEB207CA61FE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABC8A0B0C328E2084BBBC3B75F22442B /* TTTAttributedLabel.xcconfig */;
+			baseConfigurationReference = AB18EF210F2BB4207798E5767B56F289 /* TTTAttributedLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -583,9 +700,29 @@
 			};
 			name = Release;
 		};
-		7F45B7658E7004FB0E838F1342449A68 /* Release */ = {
+		8941048D165F2DEDFF144E05CB6F5BBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8C3183C1B895C08E304ACE45D2ADB6D /* SDAutoLayout.xcconfig */;
+			baseConfigurationReference = 63FB7227B3389E8A8F7469143510603F /* Pods-QZWeiXin.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A16E3E5A1B2C2837257A624F2722B2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 816A5CA953786004B16C9F74DA70F0E6 /* SDAutoLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -601,9 +738,8 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		B254DAA6CF0CE39F4A3D11B90A7E059A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -659,6 +795,27 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		D22749DD3ED46090E918CB010BC19F32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97041463C6D27A7AF21F711FFD29E2F1 /* LEETheme.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LEETheme/LEETheme-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		E4B68EE12B21C47CB798D9B1ECA6D7A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -720,30 +877,9 @@
 			};
 			name = Debug;
 		};
-		E4E00FE8FC1EDE88AAB70BC7AAB491E3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AB22C5C11C1C0493F3BD158FCEA37F3 /* Pods-QZWeiXin.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		E701314FE4129C7F32591F47D6DF068B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05A11AE174A6F0853136717BE052DEEF /* MLEmojiLabel.xcconfig */;
+			baseConfigurationReference = 53512CBB619382F4D77BDCEF2E6EFBEE /* MLEmojiLabel.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -763,25 +899,27 @@
 			};
 			name = Release;
 		};
-		F7F1F1F92DBF703232AB8686CD9544FA /* Debug */ = {
+		F55B9F520902C820836C2CCA07CDC9D8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63FB7227B3389E8A8F7469143510603F /* Pods-QZWeiXin.debug.xcconfig */;
+			baseConfigurationReference = 816A5CA953786004B16C9F74DA70F0E6 /* SDAutoLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/SDAutoLayout/SDAutoLayout-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -795,11 +933,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55CD898985C2EBE3F952FBFB94F2796E /* Build configuration list for PBXNativeTarget "Pods-QZWeiXin" */ = {
+		59C7FC01CCCC28AA6360F2E1E1DCD4A6 /* Build configuration list for PBXNativeTarget "LEETheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F7F1F1F92DBF703232AB8686CD9544FA /* Debug */,
-				E4E00FE8FC1EDE88AAB70BC7AAB491E3 /* Release */,
+				D22749DD3ED46090E918CB010BC19F32 /* Debug */,
+				3AF6C5F5FFDA8B6219E510AB00A2342E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99C95F2CD3B09DFDFEE4CAE4EFB52F6D /* Build configuration list for PBXNativeTarget "SDAutoLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16E3E5A1B2C2837257A624F2722B2C7 /* Debug */,
+				F55B9F520902C820836C2CCA07CDC9D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -813,20 +960,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		ACF006043084D057BBEDDAAAA390FA3E /* Build configuration list for PBXNativeTarget "Pods-QZWeiXin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8941048D165F2DEDFF144E05CB6F5BBA /* Debug */,
+				245345EDB87433C21DA609B66FCBEA9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C12789CDF563B0A0D4D435D3E901EC9A /* Build configuration list for PBXNativeTarget "TTTAttributedLabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D03D84032909057790B7B837E728C7E /* Debug */,
 				775DA55947EFFF0A614CEB207CA61FE2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E019482CCFFC5EE6E7BE5A1C6FD7C171 /* Build configuration list for PBXNativeTarget "SDAutoLayout" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1482A0CFEF08B11C8A230049E7EF1F1A /* Debug */,
-				7F45B7658E7004FB0E838F1342449A68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

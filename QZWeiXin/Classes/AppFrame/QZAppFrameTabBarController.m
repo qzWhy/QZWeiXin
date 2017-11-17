@@ -11,6 +11,8 @@
 #import "QZHomeTableViewController.h"
 #import "QZBaseNavgationController.h"
 
+#import "QZDiscoverViewController.h"
+
 #define kClassKey  @"rootVCClassString"
 #define kTitleKey  @"title"
 #define kImgKey    @"imageName"
@@ -36,7 +38,7 @@
                                    kImgKey    : @"tabbar_contacts",
                                    kSelImgKey : @"tabbar_contactsHL"},
                                  
-                                 @{kClassKey  : @"SDDiscoverTableViewController",
+                                 @{kClassKey  : @"QZDiscoverViewController",
                                    kTitleKey  : @"发现",
                                    kImgKey    : @"tabbar_discover",
                                    kSelImgKey : @"tabbar_discoverHL"},
