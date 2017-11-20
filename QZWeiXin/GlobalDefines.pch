@@ -11,6 +11,11 @@
 
 #define Global_tintColor [UIColor colorWithRed:0 green:(190 / 255.0) blue:(12 / 255.0) alpha:1]
 #define QZColor(r, g, b, a) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:a]
+#define TimeLineCellHighlightedColor [UIColor colorWithRed:92/255.0 green:140/255.0 blue:193/255.0 alpha:1.0]
+
+#define DAY @"day"
+
+#define NIGHT @"night"
 
 #import "SDAutoLayout.h"
 #import "MLEmojiLabel.h"

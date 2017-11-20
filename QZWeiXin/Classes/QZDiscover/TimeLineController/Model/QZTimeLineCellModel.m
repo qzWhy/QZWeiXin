@@ -8,6 +8,30 @@
 
 #import "QZTimeLineCellModel.h"
 
+extern const CGFloat maxContentLabelSize;
+extern CGFloat maxContentLabelHeight;
+
+
+
 @implementation QZTimeLineCellModel
+
+{
+    CGFloat _lastContentWidth;
+    
+}
+@synthesize msgContent = _msgContent;
+
+- (NSString *)msgContent
+{
+    CGFloat contentW = [UIScreen mainScreen].bounds.size.width - 70;
+    if (contentW != _lastContentWidth) {
+        _lastContentWidth = contentW;
+        CGRect rextRect = [_msgContent boundingRectWithSize:CGSizeMake(contentW, MAXFLOAT)
+                                                    options:NSStringDrawingUsesLineFragmentOrigin |NSStringDrawingUsesFontLeading
+                                                 attributes:@{[UIFont systemFontOfSize:contents]} context:<#(nullable NSStringDrawingContext *)#>]
+    }
+}
+    
+}
 
 @end

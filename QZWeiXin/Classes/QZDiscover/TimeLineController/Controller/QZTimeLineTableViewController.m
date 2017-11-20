@@ -9,9 +9,7 @@
 #import "QZTimeLineTableViewController.h"
 #import "LEETheme.h"
 
-#define DAY @"day"
 
-#define NIGHT @"night"
 static CGFloat textFieldH = 40;
 
 @interface QZTimeLineTableViewController ()
