@@ -8,15 +8,29 @@
 
 #import "QZTimeLineTableViewController.h"
 #import "LEETheme.h"
+#import "QZTimeLineCellModel.h"
+#import "QZTimeLineRefreshFooter.h"
+#import "QZTimeLineHeaderRefresh.h"
 
+#import "QZTimeLineHeaderView.h"
+#import "QZTimeLineCell.h"
+
+#define kTimeLineTableViewCellId @"QZTimeLineCell"
 
 static CGFloat textFieldH = 40;
 
 @interface QZTimeLineTableViewController ()
 
+
 @end
 
 @implementation QZTimeLineTableViewController
+{
+    QZTimeLineRefreshFooter *_refreshFooter;
+    QZTimeLineHeaderRefresh *_refreshHeader;
+    CGFloat _lastScrollViewOffsetY;
+    CGFloat _totalKeybordHeight;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,6 +57,44 @@ static CGFloat textFieldH = 40;
     self.edgesForExtendedLayout = UIRectEdgeTop;
     
     [self.dataArray addObjectsFromArray:[self creatModelsWithCount:10]];
+    
+    __weak typeof(self) weakSelf = self;
+    
+    //上拉加载
+    
+    _refreshFooter = [QZTimeLineRefreshFooter refreshFooterWithRefreshText:@"正在加载数据..."];
+    __weak typeof(_refreshFooter) weakRefreshFooter = _refreshFooter;
+    [_refreshFooter addToScrollView:self.tableView refreshOpration:^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weakSelf.dataArray addObjectsFromArray:[weakSelf creatModelsWithCount:10]];
+            
+            
+            /**
+             [weakSelf.tableView reloadDataWithExistedHeightCache];
+             作用等同于
+             [weakSelf.tableView reloadData];
+             只是"reloadDataWithExistedHeightCache"刷新tableView但不清空之前已经计算好的高度缓存，用于直接将新数据拼接在就数据之后的tableView刷新
+             */
+            
+            [weakSelf.tableView reloadDataWithExistedHeightCache];
+            
+            [weakRefreshFooter endRefreshing];
+        });
+    }];
+    
+    QZTimeLineHeaderView *headerView = [QZTimeLineHeaderView new];
+    headerView.frame = CGRectMake(0, 0, 0, 260);
+    self.tableView.tableHeaderView = headerView;
+    
+    //添加分割线颜色设置
+    self.tableView.lee_theme
+    .LeeAddSeparatorColor(DAY,[[UIColor lightGrayColor] colorWithAlphaComponent:0.5f])
+    .LeeAddSeparatorColor(NIGHT,[[UIColor grayColor] colorWithAlphaComponent:0.5f]);
+    
+    [self.tableView registerClass:[QZTimeLineCell class] forCellReuseIdentifier:kTimeLineTableViewCellId];
+    
+    [self setupTextField];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,8 +153,54 @@ static CGFloat textFieldH = 40;
         int nameRandomIndex = arc4random_uniform(5);
         int contentRandomIndex = arc4random_uniform(5);
         
+        QZTimeLineCellModel *model = [QZTimeLineCellModel new];
+        model.iconName = iconImageNamesArray[iconRandomIndex];
+        model.name = namesArray[nameRandomIndex];
+        model.msgContent = textArray[contentRandomIndex];
         
+        //模拟"随机图片"
+        int random = arc4random_uniform(6);
+        
+        NSMutableArray *temp = [NSMutableArray new];
+        for (int i = 0; i < random; i++) {
+            int randomIndex = arc4random_uniform(9);
+            [temp addObject:picImageNamesArray[randomIndex]];
+        }
+        if (temp.count) {
+            model.picNamesArray = [temp copy];
+        }
+        //模拟随机评论数据
+        int commentRandom = arc4random_uniform(3);
+        NSMutableArray *tempComments = [NSMutableArray new];
+        for (int i = 0; i < commentRandom; i++) {
+            QZTimeLineCellCommentItemModel *commentItemModel = [QZTimeLineCellCommentItemModel new];
+            int index = arc4random_uniform((int)namesArray.count);
+            commentItemModel.firstUserName = namesArray[index];
+            commentItemModel.firstUserId = @"666";
+            if (arc4random_uniform(10) < 5) {
+                commentItemModel.secondUserName = namesArray[arc4random_uniform((int)namesArray.count)];
+                commentItemModel.secondUserId = @"888";
+            }
+            commentItemModel.commentString = commentsArray[arc4random_uniform((int)commentsArray.count)];
+            [tempComments addObject:commentItemModel];
+        }
+        model.commentItemsArray = [tempComments copy];
+        
+        //模拟随机点赞数据
+        int likeRandom = arc4random_uniform(3);
+        NSMutableArray *tempLikes = [NSMutableArray new];
+        for (int i = 0; i < likeRandom; i++) {
+            QZTimeLineCellLikeItemModel *model = [QZTimeLineCellLikeItemModel new];
+            int index = arc4random_uniform((int)namesArray.count);
+            model.userName = namesArray[index];
+            model.userId = namesArray[index];
+            [tempLikes addObject:model];
+        }
+        model.likeItemsArray = [tempLikes copy];
+        
+        [resArr addObject: model];
     }
+    return resArr;
 }
 
 @end

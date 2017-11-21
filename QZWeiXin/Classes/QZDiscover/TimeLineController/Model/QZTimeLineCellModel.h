@@ -42,7 +42,7 @@
 @property (nonatomic, copy) NSString *firstUserName;
 @property (nonatomic, copy) NSString *firstUserId;
 
-@property (nonatomic, copy) NSString *recondUserName;
+@property (nonatomic, copy) NSString *secondUserName;
 @property (nonatomic, copy) NSString *secondUserId;
 
 @property (nonatomic, copy) NSAttributedString *attributedContent;
