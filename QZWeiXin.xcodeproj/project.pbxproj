@@ -11,6 +11,20 @@
 		1BA75CB61FA467C900B99A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BA75CB51FA467C900B99A3F /* Assets.xcassets */; };
 		1BA75CB91FA467C900B99A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BA75CB71FA467C900B99A3F /* LaunchScreen.storyboard */; };
 		1BA75CBC1FA467C900B99A3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA75CBB1FA467C900B99A3F /* main.m */; };
+		262702531FC5283F00E2D050 /* QZTimeLineCellOperationMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702521FC5283F00E2D050 /* QZTimeLineCellOperationMenu.m */; };
+		262702571FC5446700E2D050 /* QZTimeLineCellCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702561FC5446700E2D050 /* QZTimeLineCellCommentView.m */; };
+		262702751FC547F300E2D050 /* NSAttributedString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2627025D1FC547F300E2D050 /* NSAttributedString+MLLabel.m */; };
+		262702761FC547F300E2D050 /* NSMutableAttributedString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2627025F1FC547F300E2D050 /* NSMutableAttributedString+MLLabel.m */; };
+		262702771FC547F300E2D050 /* NSString+MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702611FC547F300E2D050 /* NSString+MLLabel.m */; };
+		262702781FC547F300E2D050 /* MLExpressionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702641FC547F300E2D050 /* MLExpressionManager.m */; };
+		262702791FC547F300E2D050 /* MLTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702661FC547F300E2D050 /* MLTextAttachment.m */; };
+		2627027A1FC547F300E2D050 /* NSAttributedString+MLExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702681FC547F300E2D050 /* NSAttributedString+MLExpression.m */; };
+		2627027B1FC547F300E2D050 /* NSString+MLExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 2627026A1FC547F300E2D050 /* NSString+MLExpression.m */; };
+		2627027C1FC547F300E2D050 /* MLLabelLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2627026E1FC547F300E2D050 /* MLLabelLayoutManager.m */; };
+		2627027D1FC547F300E2D050 /* MLLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702701FC547F300E2D050 /* MLLabel.m */; };
+		2627027E1FC547F300E2D050 /* MLLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702721FC547F300E2D050 /* MLLinkLabel.m */; };
+		2627027F1FC547F300E2D050 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 262702731FC547F300E2D050 /* LICENSE */; };
+		262702801FC547F300E2D050 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 262702741FC547F300E2D050 /* README.md */; };
 		262F7D4C1FB0617100C2D24E /* QZAppFrameTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262F7D3D1FB0617100C2D24E /* QZAppFrameTabBarController.m */; };
 		262F7D891FB0619100C2D24E /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 262F7D541FB0619100C2D24E /* 0.jpg */; };
 		262F7D8A1FB0619100C2D24E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 262F7D551FB0619100C2D24E /* 1.jpg */; };
@@ -96,6 +110,33 @@
 		1BA75CBA1FA467C900B99A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		1BA75CBB1FA467C900B99A3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		1CD077EED71E100B8E3ED2A6 /* libPods-QZWeiXin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QZWeiXin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		262702511FC5283F00E2D050 /* QZTimeLineCellOperationMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTimeLineCellOperationMenu.h; sourceTree = "<group>"; };
+		262702521FC5283F00E2D050 /* QZTimeLineCellOperationMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineCellOperationMenu.m; sourceTree = "<group>"; };
+		262702551FC5446700E2D050 /* QZTimeLineCellCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTimeLineCellCommentView.h; sourceTree = "<group>"; };
+		262702561FC5446700E2D050 /* QZTimeLineCellCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineCellCommentView.m; sourceTree = "<group>"; };
+		2627025C1FC547F300E2D050 /* NSAttributedString+MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MLLabel.h"; sourceTree = "<group>"; };
+		2627025D1FC547F300E2D050 /* NSAttributedString+MLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MLLabel.m"; sourceTree = "<group>"; };
+		2627025E1FC547F300E2D050 /* NSMutableAttributedString+MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+MLLabel.h"; sourceTree = "<group>"; };
+		2627025F1FC547F300E2D050 /* NSMutableAttributedString+MLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+MLLabel.m"; sourceTree = "<group>"; };
+		262702601FC547F300E2D050 /* NSString+MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MLLabel.h"; sourceTree = "<group>"; };
+		262702611FC547F300E2D050 /* NSString+MLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MLLabel.m"; sourceTree = "<group>"; };
+		262702631FC547F300E2D050 /* MLExpressionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLExpressionManager.h; sourceTree = "<group>"; };
+		262702641FC547F300E2D050 /* MLExpressionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLExpressionManager.m; sourceTree = "<group>"; };
+		262702651FC547F300E2D050 /* MLTextAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLTextAttachment.h; sourceTree = "<group>"; };
+		262702661FC547F300E2D050 /* MLTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLTextAttachment.m; sourceTree = "<group>"; };
+		262702671FC547F300E2D050 /* NSAttributedString+MLExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MLExpression.h"; sourceTree = "<group>"; };
+		262702681FC547F300E2D050 /* NSAttributedString+MLExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MLExpression.m"; sourceTree = "<group>"; };
+		262702691FC547F300E2D050 /* NSString+MLExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MLExpression.h"; sourceTree = "<group>"; };
+		2627026A1FC547F300E2D050 /* NSString+MLExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MLExpression.m"; sourceTree = "<group>"; };
+		2627026C1FC547F300E2D050 /* MLLabel+Override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MLLabel+Override.h"; sourceTree = "<group>"; };
+		2627026D1FC547F300E2D050 /* MLLabelLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLabelLayoutManager.h; sourceTree = "<group>"; };
+		2627026E1FC547F300E2D050 /* MLLabelLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLabelLayoutManager.m; sourceTree = "<group>"; };
+		2627026F1FC547F300E2D050 /* MLLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLabel.h; sourceTree = "<group>"; };
+		262702701FC547F300E2D050 /* MLLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLabel.m; sourceTree = "<group>"; };
+		262702711FC547F300E2D050 /* MLLinkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLLinkLabel.h; sourceTree = "<group>"; };
+		262702721FC547F300E2D050 /* MLLinkLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLLinkLabel.m; sourceTree = "<group>"; };
+		262702731FC547F300E2D050 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		262702741FC547F300E2D050 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		262F7CCE1FB04B1A00C2D24E /* GlobalDefines.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GlobalDefines.pch; path = ../GlobalDefines.pch; sourceTree = "<group>"; };
 		262F7D3C1FB0617100C2D24E /* QZAppFrameTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZAppFrameTabBarController.h; sourceTree = "<group>"; };
 		262F7D3D1FB0617100C2D24E /* QZAppFrameTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZAppFrameTabBarController.m; sourceTree = "<group>"; };
@@ -228,10 +269,100 @@
 		1BA75CAB1FA467C900B99A3F /* QZWeiXin */ = {
 			isa = PBXGroup;
 			children = (
+				262702581FC547EA00E2D050 /* Vender */,
 				262F7D3A1FB0617100C2D24E /* Classes */,
 				262F7D501FB0619100C2D24E /* Others */,
 			);
 			path = QZWeiXin;
+			sourceTree = "<group>";
+		};
+		262702501FC5281B00E2D050 /* OperationMennu */ = {
+			isa = PBXGroup;
+			children = (
+				262702511FC5283F00E2D050 /* QZTimeLineCellOperationMenu.h */,
+				262702521FC5283F00E2D050 /* QZTimeLineCellOperationMenu.m */,
+			);
+			path = OperationMennu;
+			sourceTree = "<group>";
+		};
+		262702541FC5444300E2D050 /* QZTimeLineCommentView */ = {
+			isa = PBXGroup;
+			children = (
+				262702551FC5446700E2D050 /* QZTimeLineCellCommentView.h */,
+				262702561FC5446700E2D050 /* QZTimeLineCellCommentView.m */,
+			);
+			path = QZTimeLineCommentView;
+			sourceTree = "<group>";
+		};
+		262702581FC547EA00E2D050 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				262702591FC547F300E2D050 /* MLLabel */,
+			);
+			name = Vender;
+			path = Classes/Vender;
+			sourceTree = "<group>";
+		};
+		262702591FC547F300E2D050 /* MLLabel */ = {
+			isa = PBXGroup;
+			children = (
+				2627025A1FC547F300E2D050 /* Classes */,
+				262702731FC547F300E2D050 /* LICENSE */,
+				262702741FC547F300E2D050 /* README.md */,
+			);
+			path = MLLabel;
+			sourceTree = "<group>";
+		};
+		2627025A1FC547F300E2D050 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2627025B1FC547F300E2D050 /* Category */,
+				262702621FC547F300E2D050 /* Expression */,
+				2627026B1FC547F300E2D050 /* Helper */,
+				2627026F1FC547F300E2D050 /* MLLabel.h */,
+				262702701FC547F300E2D050 /* MLLabel.m */,
+				262702711FC547F300E2D050 /* MLLinkLabel.h */,
+				262702721FC547F300E2D050 /* MLLinkLabel.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2627025B1FC547F300E2D050 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2627025C1FC547F300E2D050 /* NSAttributedString+MLLabel.h */,
+				2627025D1FC547F300E2D050 /* NSAttributedString+MLLabel.m */,
+				2627025E1FC547F300E2D050 /* NSMutableAttributedString+MLLabel.h */,
+				2627025F1FC547F300E2D050 /* NSMutableAttributedString+MLLabel.m */,
+				262702601FC547F300E2D050 /* NSString+MLLabel.h */,
+				262702611FC547F300E2D050 /* NSString+MLLabel.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		262702621FC547F300E2D050 /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				262702631FC547F300E2D050 /* MLExpressionManager.h */,
+				262702641FC547F300E2D050 /* MLExpressionManager.m */,
+				262702651FC547F300E2D050 /* MLTextAttachment.h */,
+				262702661FC547F300E2D050 /* MLTextAttachment.m */,
+				262702671FC547F300E2D050 /* NSAttributedString+MLExpression.h */,
+				262702681FC547F300E2D050 /* NSAttributedString+MLExpression.m */,
+				262702691FC547F300E2D050 /* NSString+MLExpression.h */,
+				2627026A1FC547F300E2D050 /* NSString+MLExpression.m */,
+			);
+			path = Expression;
+			sourceTree = "<group>";
+		};
+		2627026B1FC547F300E2D050 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2627026C1FC547F300E2D050 /* MLLabel+Override.h */,
+				2627026D1FC547F300E2D050 /* MLLabelLayoutManager.h */,
+				2627026E1FC547F300E2D050 /* MLLabelLayoutManager.m */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		262F7D3A1FB0617100C2D24E /* Classes */ = {
@@ -501,6 +632,8 @@
 		2641BD811FBEDBE400B0E568 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				262702541FC5444300E2D050 /* QZTimeLineCommentView */,
+				262702501FC5281B00E2D050 /* OperationMennu */,
 				26EE82571FC423B5003FD7C5 /* HeaderView */,
 				26EE82531FC4094B003FD7C5 /* QZTimeLineHeaderView */,
 				26EE82431FC3D857003FD7C5 /* QZTimeLineRefreshFooter */,
@@ -772,6 +905,7 @@
 				262F7D971FB0619100C2D24E /* 21.jpg in Resources */,
 				262F7D8A1FB0619100C2D24E /* 1.jpg in Resources */,
 				262F7DA41FB0619100C2D24E /* icon3.jpg in Resources */,
+				2627027F1FC547F300E2D050 /* LICENSE in Resources */,
 				262F7DB01FB0619100C2D24E /* pbg.jpg in Resources */,
 				262F7DB81FB0619100C2D24E /* pic7.jpg in Resources */,
 				262F7DBB1FB0619100C2D24E /* tx.jpeg in Resources */,
@@ -844,28 +978,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				262702531FC5283F00E2D050 /* QZTimeLineCellOperationMenu.m in Sources */,
+				2627027D1FC547F300E2D050 /* MLLabel.m in Sources */,
 				26EE82561FC4096B003FD7C5 /* QZTimeLineHeaderRefresh.m in Sources */,
 				2665E9151FBD5625003BAEF9 /* QZChatTableViewController.m in Sources */,
 				26EE82521FC3F414003FD7C5 /* QZTimeLineRefreshFooter.m in Sources */,
 				26446C951FBAB95B00E09D25 /* QZAnalogDataGenerator.m in Sources */,
+				262702801FC547F300E2D050 /* README.md in Sources */,
 				1BA75CBC1FA467C900B99A3F /* main.m in Sources */,
+				2627027E1FC547F300E2D050 /* MLLinkLabel.m in Sources */,
 				262F7DC51FB062E300C2D24E /* QZHomeTableViewCell.m in Sources */,
 				2641BD8B1FBEDC5D00B0E568 /* QZTimeLineCell.m in Sources */,
 				2665E9161FBD5625003BAEF9 /* QZChatModel.m in Sources */,
 				262F7DC21FB0629600C2D24E /* QZHomeTableViewController.m in Sources */,
+				262702761FC547F300E2D050 /* NSMutableAttributedString+MLLabel.m in Sources */,
 				26446C8F1FBA94C800E09D25 /* QZShortVideoController.m in Sources */,
+				262702791FC547F300E2D050 /* MLTextAttachment.m in Sources */,
 				2642B7411FB941B800941CEA /* QZHomeTableViewCellModel.m in Sources */,
 				26EE824B1FC3D8B9003FD7C5 /* QZBaseNavgationController.m in Sources */,
+				262702571FC5446700E2D050 /* QZTimeLineCellCommentView.m in Sources */,
 				262F7D4C1FB0617100C2D24E /* QZAppFrameTabBarController.m in Sources */,
 				1BA75CAE1FA467C900B99A3F /* AppDelegate.m in Sources */,
 				26EE825A1FC423CE003FD7C5 /* QZTimeLineHeaderView.m in Sources */,
+				262702751FC547F300E2D050 /* NSAttributedString+MLLabel.m in Sources */,
 				26F881C61FB98F61006235D8 /* QZEyeAnimationView.m in Sources */,
 				26446C921FBA984000E09D25 /* QZShortVideoProgressView.m in Sources */,
 				26EE824F1FC3D8E2003FD7C5 /* QZBaseRefreshView.m in Sources */,
 				26EE824C1FC3D8B9003FD7C5 /* QZBaseTableViewController.m in Sources */,
+				262702781FC547F300E2D050 /* MLExpressionManager.m in Sources */,
+				2627027A1FC547F300E2D050 /* NSAttributedString+MLExpression.m in Sources */,
 				2641BD7A1FBEC88A00B0E568 /* QZDiscoverViewController.m in Sources */,
 				2641BD871FBEDC3000B0E568 /* QZTimeLineCellModel.m in Sources */,
+				262702771FC547F300E2D050 /* NSString+MLLabel.m in Sources */,
 				2641BD841FBEDC0700B0E568 /* QZTimeLineTableViewController.m in Sources */,
+				2627027C1FC547F300E2D050 /* MLLabelLayoutManager.m in Sources */,
+				2627027B1FC547F300E2D050 /* NSString+MLExpression.m in Sources */,
 				2665E9171FBD5625003BAEF9 /* QZChatTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

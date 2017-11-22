@@ -9,7 +9,7 @@
 #import "QZTimeLineCell.h"
 #import "QZTimeLineCellModel.h"
 #import "LEETheme.h"
-
+#import "QZTimeLineCellOperationMenu.h"
 const CGFloat contentLabelFoneSize = 15;
 CGFloat maxContentLabelHeight = 0;//根据具体font而定
 
@@ -26,6 +26,7 @@ NSString *const kQZTImeLineCellOperationButtonClickedNotification = @"QZTimeLine
     UIButton *_moreButton;
     UIButton *_operationButton;
     
+    QZTimeLineCellOperationMenu *_operationMenu;
     
 }
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -159,5 +160,15 @@ NSString *const kQZTImeLineCellOperationButtonClickedNotification = @"QZTimeLine
 - (void)operationButtonClicked
 {
     
+}
+
+- (void)receiveOperationButtonClickedNotification:(NSNotification *)notification
+{
+    UIButton *btn = [notification object];
+    
+//    if (btn != _operationButton && _oper) {
+//        <#statements#>
+//    }
+//    
 }
 @end

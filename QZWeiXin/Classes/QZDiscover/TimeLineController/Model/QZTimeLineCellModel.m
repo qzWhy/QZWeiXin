@@ -7,7 +7,7 @@
 //
 
 #import "QZTimeLineCellModel.h"
-
+#import <UIKit/UIKit.h>
 
 extern const CGFloat contentLabelFontSize;
 extern CGFloat maxContentLabelHeight;
@@ -32,15 +32,17 @@ extern CGFloat maxContentLabelHeight;
     CGFloat contentW = [UIScreen mainScreen].bounds.size.width - 70;
     if (contentW != _lastContentWidth) {
         _lastContentWidth = contentW;
-        CGRect textRect = [_msgContent boundingRectWithSize:CGSizeMake(contentW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin |NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName :[UIFont systemFontOfSize:contentLabelFontSize]} context:nil];
+        CGRect textRect = [_msgContent boundingRectWithSize:CGSizeMake(contentW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:contentLabelFontSize]} context:nil];
         if (textRect.size.height > maxContentLabelHeight) {
             _shouldShowMoreButton = YES;
         } else {
             _shouldShowMoreButton = NO;
         }
     }
+    
     return _msgContent;
 }
+
 - (void)setIsOpening:(BOOL)isOpening
 {
     if (!_shouldShowMoreButton) {

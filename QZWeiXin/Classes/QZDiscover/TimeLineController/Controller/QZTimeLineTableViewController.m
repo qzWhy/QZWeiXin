@@ -21,6 +21,11 @@ static CGFloat textFieldH = 40;
 
 @interface QZTimeLineTableViewController ()
 
+@property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, assign) BOOL isReplayingComment;
+@property (nonatomic, strong) NSIndexPath *currentEditingIndexPath;
+@property (nonatomic, copy) NSString *commentToUser;
+
 
 @end
 
@@ -95,6 +100,90 @@ static CGFloat textFieldH = 40;
     
     [self setupTextField];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardNotification:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if (!_refreshHeader.superview) {
+        _refreshHeader = [QZTimeLineHeaderRefresh refreshHeaderWithCenter:CGPointMake(40, 45)];
+        _refreshHeader.scrollView = self.tableView;
+        __weak typeof(_refreshHeader) weakHeader = _refreshHeader;
+        __weak typeof(self) weakSelf = self;
+        [_refreshHeader setRefreshingBlock:^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 *NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                weakSelf.dataArray = [[weakSelf creatModelsWithCount:10] mutableCopy];
+                [weakHeader endRefreshing];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [weakSelf.tableView reloadData];
+                });
+            });
+        }];
+        [self.tableView.superview addSubview:_refreshHeader];
+    } else {
+        [self.tableView.superview bringSubviewToFront:_refreshHeader];
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [_textField resignFirstResponder];
+}
+
+- (void)dealloc
+{
+    [_refreshHeader removeFromSuperview];
+    [_refreshFooter removeFromSuperview];
+    
+    [_textField removeFromSuperview];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+//右栏目按钮点击事件
+
+- (void)rightBarButtonItemAction:(UIBarButtonItem *)sender
+{
+    if ([[LEETheme currentThemeTag] isEqualToString:DAY]) {
+        [LEETheme startTheme:NIGHT];
+    } else {
+        [LEETheme startTheme:DAY];
+    }
+}
+
+- (void)setupTextField
+{
+    _textField = [UITextField new];
+    _textField.returnKeyType = UIReturnKeyDone;//右下角的返回键
+    _textField.delegate = self;
+    _textField.layer.borderColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.8].CGColor;
+    _textField.layer.borderWidth = 1;
+    
+    
+    //为textField添加北京颜色 字体颜色的设置 还有block设置，在block中改变它的键盘样式 （当然背景颜色和字体颜色也恶意直接在block中写）
+    _textField.lee_theme
+    .LeeAddBackgroundColor(DAY,[UIColor whiteColor])
+    .LeeAddBackgroundColor(NIGHT,[UIColor blackColor])
+    .LeeAddTextColor(DAY,[UIColor blackColor])
+    .LeeAddTextColor(NIGHT,[UIColor grayColor])
+    .LeeAddCustomConfig(DAY, ^(UITextField *item){
+        item.keyboardAppearance = UIKeyboardTypeDefault;
+        if ([item isFirstResponder]) {
+            [item resignFirstResponder];
+            [item becomeFirstResponder];
+        }
+    }).LeeAddCustomConfig(NIGHT, ^(UITextField *item){
+        item.keyboardAppearance = UIKeyboardAppearanceDark;
+        if ([item isFirstResponder]) {
+            [item resignFirstResponder];
+            [item becomeFirstResponder];
+        }
+    });
+    _textField.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height, self.view.width_sd, textFieldH);
+    [[UIApplication sharedApplication].keyWindow addSubview:_textField];
+    
+    [_textField becomeFirstResponder];
+    [_textField resignFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -201,6 +290,47 @@ static CGFloat textFieldH = 40;
         [resArr addObject: model];
     }
     return resArr;
+}
+
+- (void)adjustTableViewToFitKeyboard
+{
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:_currentEditingIndexPath];
+    CGRect rect = [cell.superview convertRect:cell.frame toView:window];
+    [self adjustTableViewToFitKeyboardWithRect:rect];
+}
+
+- (void)adjustTableViewToFitKeyboardWithRect:(CGRect)rect
+{
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    CGFloat delta = CGRectGetMaxY(rect) - (window.bounds.size.height - _totalKeybordHeight);
+    CGPoint offset = self.tableView.contentOffset;
+    offset.y += delta;
+    if (offset.y < 0) {
+        offset.y = 0;
+    }
+    [self.tableView setContentOffset:offset animated:YES];
+}
+
+
+- (void)keyboardNotification:(NSNotification *)notification
+{
+    NSDictionary *dict = notification.userInfo;
+    CGRect rect = [dict[@"UIKeyboardFrameEndUserInfoKey"] CGRectValue];
+    
+    CGRect textFieldRect = CGRectMake(0, rect.origin.y - textFieldH, rect.size.width, textFieldH);
+    if (rect.origin.y == [UIScreen mainScreen].bounds.size.height) {
+        textFieldRect = rect;
+    }
+    [UIView animateWithDuration:0.25 animations:^{
+        _textField.frame = textFieldRect;
+    }];
+    
+    CGFloat h = rect.size.height + textFieldH;
+    if (_totalKeybordHeight != h ) {
+        _totalKeybordHeight = h;
+        [self adjustTableViewToFitKeyboard];
+    }
 }
 
 @end
