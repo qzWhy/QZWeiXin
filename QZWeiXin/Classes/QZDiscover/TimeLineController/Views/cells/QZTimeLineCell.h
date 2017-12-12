@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class QZTimeLineCellModel;
 @interface QZTimeLineCell : UITableViewCell
+
+@property (nonatomic, strong) NSIndexPath *indexPath;
+
+@property (nonatomic, strong) QZTimeLineCellModel *model;
 
 @end

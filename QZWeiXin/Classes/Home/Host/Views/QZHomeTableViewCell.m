@@ -41,6 +41,8 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setupView];
         [self setupGestureRecognizer];
+        
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
     }
     return self;
 }

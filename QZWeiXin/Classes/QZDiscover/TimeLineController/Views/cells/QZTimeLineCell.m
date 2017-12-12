@@ -7,6 +7,7 @@
 //
 
 #import "QZTimeLineCell.h"
+#import "QZTimeLineCellModel.h"
 
 const CGFloat contentLabelFontSize = 15;
 CGFloat maxContentLabelHeight = 0; // 根据具体font而定
@@ -20,10 +21,7 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     UIButton *_moreButton;
     UIButton *_operationButton;
 }
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
+
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -72,10 +70,37 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     .widthIs(40)
     .heightIs(40);
     
+    _nameLabel.sd_layout
+    .leftSpaceToView(_iconView,margin)
+    .topEqualToView(_iconView)
+    .heightIs(18);
+    [_nameLabel setSingleLineAutoResizeWithMaxWidth:200];
+    
+    _contentLabel.sd_layout
+    .leftEqualToView(_nameLabel)
+    .topSpaceToView(_nameLabel,margin)
+    .rightSpaceToView(contentView,margin)
+    .autoHeightRatio(0);
    
     
 }
 
+- (void)setModel:(QZTimeLineCellModel *)model
+{
+    _model = model;
+    
+    _iconView.image = [UIImage imageNamed:model.iconName];
+    _nameLabel.text = model.name;
+    _contentLabel.text = model.msgContent;
+    //设置cell高度自适应 这句话 必不可少
+    [self setupAutoHeightWithBottomView:_contentLabel bottomMargin:15];
+}
+
+- (void)setFrame:(CGRect)frame
+{
+    [super setFrame:frame];
+    
+}
 #pragma mark - private actions
 - (void)moreButtonClicked
 {
