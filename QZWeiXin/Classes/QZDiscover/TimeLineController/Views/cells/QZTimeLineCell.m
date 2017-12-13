@@ -8,7 +8,8 @@
 
 #import "QZTimeLineCell.h"
 #import "QZTimeLineCellModel.h"
-
+#import "QZWeiXinPhotoContainerView.h"
+#import "LEETheme.h"
 const CGFloat contentLabelFontSize = 15;
 CGFloat maxContentLabelHeight = 0; // 根据具体font而定
 @implementation QZTimeLineCell
@@ -16,6 +17,7 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     UIImageView *_iconView;
     UILabel *_nameLabel;
     UILabel *_contentLabel;
+    QZWeiXinPhotoContainerView *_picContainerView;
     
     UILabel *_timeLabel;
     UIButton *_moreButton;
@@ -27,6 +29,9 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         [self setup];
+        
+        //设置主题
+        [self configTheme];
         
         self.selectionStyle = UITableViewCellSelectionStyleNone;
     }
@@ -58,7 +63,9 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     [_operationButton setImage:[UIImage imageNamed:@"AlbumOperateMore"] forState:UIControlStateNormal];
     [_operationButton addTarget:self action:@selector(operationButtonClicked) forControlEvents:UIControlEventTouchUpInside];
     
-    NSArray *views = @[_iconView,_nameLabel,_contentLabel,_moreButton,_operationButton];
+    _picContainerView = [QZWeiXinPhotoContainerView new];
+    
+    NSArray *views = @[_iconView,_nameLabel,_contentLabel,_moreButton,_operationButton,_picContainerView];
     [self.contentView sd_addSubviews:views];
     
     UIView *contentView = self.contentView;
@@ -82,7 +89,24 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     .rightSpaceToView(contentView,margin)
     .autoHeightRatio(0);
    
+    _picContainerView.sd_layout
+    .leftEqualToView(_contentLabel);//已经在内部实现宽高自适应 所以不需要再设置宽高 ，top值是具体有无图片再setModel方法中设置
     
+}
+
+- (void)configTheme
+{
+    self.lee_theme
+    .LeeAddBackgroundColor(DAY,[UIColor whiteColor])
+    .LeeAddBackgroundColor(NIGHT,[UIColor blackColor]);
+    
+    _contentLabel.lee_theme
+    .LeeAddTextColor(DAY, [UIColor blackColor])
+    .LeeAddTextColor(NIGHT, [UIColor grayColor]);
+    
+    _timeLabel.lee_theme
+    .LeeAddTextColor(DAY, [UIColor lightGrayColor])
+    .LeeAddTextColor(NIGHT, [UIColor grayColor]);
 }
 
 - (void)setModel:(QZTimeLineCellModel *)model
@@ -92,6 +116,7 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     _iconView.image = [UIImage imageNamed:model.iconName];
     _nameLabel.text = model.name;
     _contentLabel.text = model.msgContent;
+    _picContainerView.picPathStringsArray = model.picNamesArray;
     //设置cell高度自适应 这句话 必不可少
     [self setupAutoHeightWithBottomView:_contentLabel bottomMargin:15];
 }

@@ -3,4 +3,5 @@ target 'QZWeiXin' do
 pod 'SDAutoLayout'
 pod 'MLEmojiLabel'
 pod 'LEETheme'
+pod 'SDWebImage'
 end
