@@ -137,7 +137,7 @@
             [temp addObject:picImageNamesArray[randomIndex]];
         }
         if (temp.count) {
-//            model.picNamesArray = [temp copy];
+            model.picNamesArray = [temp copy];
         }
 /*
         // 模拟随机评论数据

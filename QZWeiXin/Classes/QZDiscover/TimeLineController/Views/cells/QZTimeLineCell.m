@@ -104,9 +104,9 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     .LeeAddTextColor(DAY, [UIColor blackColor])
     .LeeAddTextColor(NIGHT, [UIColor grayColor]);
     
-    _timeLabel.lee_theme
-    .LeeAddTextColor(DAY, [UIColor lightGrayColor])
-    .LeeAddTextColor(NIGHT, [UIColor grayColor]);
+//    _timeLabel.lee_theme
+//    .LeeAddTextColor(DAY, [UIColor lightGrayColor])
+//    .LeeAddTextColor(NIGHT, [UIColor grayColor]);
 }
 
 - (void)setModel:(QZTimeLineCellModel *)model
@@ -117,8 +117,17 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     _nameLabel.text = model.name;
     _contentLabel.text = model.msgContent;
     _picContainerView.picPathStringsArray = model.picNamesArray;
+    
+    
+    CGFloat picContainerTopMargin = 0;
+    if (model.picNamesArray.count) {
+        picContainerTopMargin = 10;
+    }
+    
+    _picContainerView.sd_layout.topSpaceToView(_contentLabel,picContainerTopMargin);
+    
     //设置cell高度自适应 这句话 必不可少
-    [self setupAutoHeightWithBottomView:_contentLabel bottomMargin:15];
+    [self setupAutoHeightWithBottomView:_picContainerView bottomMargin:15];
 }
 
 - (void)setFrame:(CGRect)frame
