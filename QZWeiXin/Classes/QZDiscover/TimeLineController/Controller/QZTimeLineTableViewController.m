@@ -196,6 +196,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     QZTimeLineCell *cell = [tableView dequeueReusableCellWithIdentifier:kTimeLineTableViewCellId];
+    cell.indexPath = indexPath;
+    __weak typeof(self) weakSelf = self;
+    if (!cell.moreButtonClickedBlock) {
+        [cell setMoreButtonClickedBlock:^(NSIndexPath *indexPath) {
+            QZTimeLineCellModel *model = weakSelf.dataArray[indexPath.row];
+            model.isOpening = !model.isOpening;
+            [weakSelf.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }];
+    }
+    
+    //此步骤设置用于实现cell的frame缓存，可以让tableView滑动更加流畅／／／
+    
+    [cell useCellFrameCacheWithIndexPath:indexPath tableView:tableView];
+    
+    /////////////////////////////////////////////////////
+    
     cell.model = self.dataArray[indexPath.row];
     
     return cell;

@@ -89,6 +89,13 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     .rightSpaceToView(contentView,margin)
     .autoHeightRatio(0);
    
+    
+    //moreButton的高度在setModel里面设置
+    _moreButton.sd_layout
+    .leftEqualToView(_contentLabel)
+    .topSpaceToView(_contentLabel,0)
+    .widthIs(30);
+    
     _picContainerView.sd_layout
     .leftEqualToView(_contentLabel);//已经在内部实现宽高自适应 所以不需要再设置宽高 ，top值是具体有无图片再setModel方法中设置
     
@@ -118,13 +125,26 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     _contentLabel.text = model.msgContent;
     _picContainerView.picPathStringsArray = model.picNamesArray;
     
+    if (model.shouldShowMoreButton) {//如果文字高度超过60
+        _moreButton.sd_layout.heightIs(20);
+        _moreButton.hidden = NO;
+        if (model.isOpening) {//如果需要展开
+            [_moreButton setTitle:@"收起" forState:UIControlStateNormal];
+        } else {
+            _contentLabel.sd_layout.maxHeightIs(maxContentLabelHeight);
+            [_moreButton setTitle:@"全文" forState:UIControlStateNormal];
+        }
+    } else {
+        _moreButton.sd_layout.heightIs(0);
+        _moreButton.hidden = YES;
+    }
     
     CGFloat picContainerTopMargin = 0;
     if (model.picNamesArray.count) {
         picContainerTopMargin = 10;
     }
     
-    _picContainerView.sd_layout.topSpaceToView(_contentLabel,picContainerTopMargin);
+    _picContainerView.sd_layout.topSpaceToView(_moreButton,picContainerTopMargin);
     
     //设置cell高度自适应 这句话 必不可少
     [self setupAutoHeightWithBottomView:_picContainerView bottomMargin:15];
@@ -138,7 +158,9 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
 #pragma mark - private actions
 - (void)moreButtonClicked
 {
-    
+    if (self.moreButtonClickedBlock) {
+        self.moreButtonClickedBlock(self.indexPath);
+    }
 }
 - (void)operationButtonClicked
 {
