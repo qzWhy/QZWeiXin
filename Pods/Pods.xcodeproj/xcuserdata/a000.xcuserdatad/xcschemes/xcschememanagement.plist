@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MLLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-QZWeiXin.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +42,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>04F839BEEFC94FED095C02CFDAE8A766</key>
+		<key>36439884A451EBB2C57052723CD38E45</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BE4AB17EE45CFA485E390F84ED927CF</key>
+		<key>45B1C8D83D90154FE95F78F2B5291964</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C9862DF7477856509ED9D5A178BC0E30</key>
+		<key>ABD0E8A635C1EEFB257A3FEF3B171009</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE14D1DA9DE4883259AD70375131C52B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

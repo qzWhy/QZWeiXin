@@ -2,6 +2,7 @@ PODS:
   - LEETheme (1.1.7)
   - MLEmojiLabel (1.0.2):
     - TTTAttributedLabel (~> 1.13.4)
+  - MLLabel (1.10.5)
   - SDAutoLayout (2.2.0)
   - SDWebImage (4.2.2):
     - SDWebImage/Core (= 4.2.2)
@@ -11,16 +12,18 @@ PODS:
 DEPENDENCIES:
   - LEETheme
   - MLEmojiLabel
+  - MLLabel
   - SDAutoLayout
   - SDWebImage
 
 SPEC CHECKSUMS:
   LEETheme: e5dc623fe58ee9f2b973e9a7445267e3e972deb4
   MLEmojiLabel: 36d73c19f9975cbf9def24e5bc135263b0337fd8
+  MLLabel: d76124055a2205e7f76878e62cd06ba925ba0c97
   SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
 
-PODFILE CHECKSUM: 8792934e39d18c43b6ede91109fcd891fda7b1d5
+PODFILE CHECKSUM: 8704e7fde29cbede045b48cf3853b34545d8c14e
 
 COCOAPODS: 1.3.1
