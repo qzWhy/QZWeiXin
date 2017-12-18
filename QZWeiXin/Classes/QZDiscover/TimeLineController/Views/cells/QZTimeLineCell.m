@@ -9,6 +9,7 @@
 #import "QZTimeLineCell.h"
 #import "QZTimeLineCellModel.h"
 #import "QZWeiXinPhotoContainerView.h"
+#import "QZTimeLineCellCommentView.h"
 #import "LEETheme.h"
 const CGFloat contentLabelFontSize = 15;
 CGFloat maxContentLabelHeight = 0; // 根据具体font而定
@@ -22,6 +23,9 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     UILabel *_timeLabel;
     UIButton *_moreButton;
     UIButton *_operationButton;
+    
+    QZTimeLineCellCommentView *_commentView;
+    
 }
 
 
@@ -53,6 +57,9 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
         maxContentLabelHeight = _contentLabel.font.lineHeight *3;
     }
     
+    _timeLabel = [UILabel new];
+    _timeLabel.font = [UIFont systemFontOfSize:13];
+    
     _moreButton = [UIButton new];
     [_moreButton setTitle:@"全文" forState:UIControlStateNormal];
     [_moreButton setTitleColor:TimeLineCellHighlightedColor forState:UIControlStateNormal];
@@ -65,7 +72,9 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     
     _picContainerView = [QZWeiXinPhotoContainerView new];
     
-    NSArray *views = @[_iconView,_nameLabel,_contentLabel,_moreButton,_operationButton,_picContainerView];
+    _commentView = [QZTimeLineCellCommentView new];
+    
+    NSArray *views = @[_iconView,_nameLabel,_contentLabel,_moreButton,_operationButton,_picContainerView,_timeLabel,_commentView];
     [self.contentView sd_addSubviews:views];
     
     UIView *contentView = self.contentView;
@@ -98,6 +107,23 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     
     _picContainerView.sd_layout
     .leftEqualToView(_contentLabel);//已经在内部实现宽高自适应 所以不需要再设置宽高 ，top值是具体有无图片再setModel方法中设置
+    _timeLabel.sd_layout
+    .leftEqualToView(_contentLabel)
+    .topSpaceToView(_picContainerView,margin)
+    .heightIs(15);
+    [_timeLabel setSingleLineAutoResizeWithMaxWidth:200];
+    
+    _operationButton.sd_layout
+    .rightSpaceToView(contentView,margin)
+    .centerYEqualToView(_timeLabel)
+    .heightIs(25)
+    .widthIs(25);
+    
+    _commentView.sd_layout
+    .leftEqualToView(_contentLabel)
+    .rightSpaceToView(contentView, margin)
+    .topSpaceToView(_timeLabel,margin);//已经在内部实现了高度自适应所以不需要再设置高度
+    
     
 }
 
@@ -111,14 +137,16 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     .LeeAddTextColor(DAY, [UIColor blackColor])
     .LeeAddTextColor(NIGHT, [UIColor grayColor]);
     
-//    _timeLabel.lee_theme
-//    .LeeAddTextColor(DAY, [UIColor lightGrayColor])
-//    .LeeAddTextColor(NIGHT, [UIColor grayColor]);
+    _timeLabel.lee_theme
+    .LeeAddTextColor(DAY, [UIColor lightGrayColor])
+    .LeeAddTextColor(NIGHT, [UIColor grayColor]);
 }
 
 - (void)setModel:(QZTimeLineCellModel *)model
 {
     _model = model;
+    
+    [_commentView setupWithLikeItmesArray:model.likeItemsArray commentItemsArray:model.commentItemsArray];
     
     _iconView.image = [UIImage imageNamed:model.iconName];
     _nameLabel.text = model.name;
@@ -146,8 +174,16 @@ CGFloat maxContentLabelHeight = 0; // 根据具体font而定
     
     _picContainerView.sd_layout.topSpaceToView(_moreButton,picContainerTopMargin);
     
+    UIView *bottomView;
+    if (!model.commentItemsArray.count && !model.likeItemsArray.count) {
+        bottomView = _timeLabel;
+    } else {
+        bottomView = _commentView;
+    }
+    
     //设置cell高度自适应 这句话 必不可少
-    [self setupAutoHeightWithBottomView:_picContainerView bottomMargin:15];
+    [self setupAutoHeightWithBottomView:bottomView  bottomMargin:15];
+    _timeLabel.text = @"1分钟前";
 }
 
 - (void)setFrame:(CGRect)frame

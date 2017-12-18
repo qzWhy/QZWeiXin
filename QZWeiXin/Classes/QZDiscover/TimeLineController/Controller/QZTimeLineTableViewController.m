@@ -139,12 +139,11 @@
         if (temp.count) {
             model.picNamesArray = [temp copy];
         }
-/*
         // 模拟随机评论数据
         int commentRandom = arc4random_uniform(3);
         NSMutableArray *tempComments = [NSMutableArray new];
         for (int i = 0; i < commentRandom; i++) {
-            SDTimeLineCellCommentItemModel *commentItemModel = [SDTimeLineCellCommentItemModel new];
+            QZTimeLineCellCommentItemModel *commentItemModel = [QZTimeLineCellCommentItemModel new];
             int index = arc4random_uniform((int)namesArray.count);
             commentItemModel.firstUserName = namesArray[index];
             commentItemModel.firstUserId = @"666";
@@ -161,7 +160,7 @@
         int likeRandom = arc4random_uniform(3);
         NSMutableArray *tempLikes = [NSMutableArray new];
         for (int i = 0; i < likeRandom; i++) {
-            SDTimeLineCellLikeItemModel *model = [SDTimeLineCellLikeItemModel new];
+            QZTimeLineCellLikeItemModel *model = [QZTimeLineCellLikeItemModel new];
             int index = arc4random_uniform((int)namesArray.count);
             model.userName = namesArray[index];
             model.userId = namesArray[index];
@@ -169,9 +168,7 @@
         }
         
         model.likeItemsArray = [tempLikes copy];
-        
-        
-*/
+    
         [resArr addObject:model];
     }
     return [resArr copy];

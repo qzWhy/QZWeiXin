@@ -82,6 +82,7 @@
 		26C6B4A51FD9152900256ECF /* QZTimeLineTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C6B4A41FD9152900256ECF /* QZTimeLineTableHeaderView.m */; };
 		26C6B4A81FD9262400256ECF /* QZTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C6B4A71FD9262400256ECF /* QZTimeLineCell.m */; };
 		26C6B4AB1FD9350600256ECF /* QZTimeLineCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C6B4AA1FD9350600256ECF /* QZTimeLineCellModel.m */; };
+		26D20D8A1FE7B4D800B315A5 /* QZTimeLineRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D20D891FE7B4D800B315A5 /* QZTimeLineRefreshHeader.m */; };
 		26DAFADB1FE3B06E00FDD436 /* QZTimeLineCellCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DAFADA1FE3B06E00FDD436 /* QZTimeLineCellCommentView.m */; };
 		26EE824B1FC3D8B9003FD7C5 /* QZBaseNavgationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EE82461FC3D8B9003FD7C5 /* QZBaseNavgationController.m */; };
 		26EE824C1FC3D8B9003FD7C5 /* QZBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EE824A1FC3D8B9003FD7C5 /* QZBaseTableViewController.m */; };
@@ -190,6 +191,8 @@
 		26C6B4A71FD9262400256ECF /* QZTimeLineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineCell.m; sourceTree = "<group>"; };
 		26C6B4A91FD9350600256ECF /* QZTimeLineCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTimeLineCellModel.h; sourceTree = "<group>"; };
 		26C6B4AA1FD9350600256ECF /* QZTimeLineCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineCellModel.m; sourceTree = "<group>"; };
+		26D20D881FE7B4D800B315A5 /* QZTimeLineRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTimeLineRefreshHeader.h; sourceTree = "<group>"; };
+		26D20D891FE7B4D800B315A5 /* QZTimeLineRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineRefreshHeader.m; sourceTree = "<group>"; };
 		26DAFAD91FE3B06E00FDD436 /* QZTimeLineCellCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZTimeLineCellCommentView.h; sourceTree = "<group>"; };
 		26DAFADA1FE3B06E00FDD436 /* QZTimeLineCellCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QZTimeLineCellCommentView.m; sourceTree = "<group>"; };
 		26EE82451FC3D8B9003FD7C5 /* QZBaseNavgationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBaseNavgationController.h; sourceTree = "<group>"; };
@@ -671,6 +674,8 @@
 		26C6B49F1FD9084600256ECF /* QZTimeLineRefreshHeader */ = {
 			isa = PBXGroup;
 			children = (
+				26D20D881FE7B4D800B315A5 /* QZTimeLineRefreshHeader.h */,
+				26D20D891FE7B4D800B315A5 /* QZTimeLineRefreshHeader.m */,
 			);
 			path = QZTimeLineRefreshHeader;
 			sourceTree = "<group>";
@@ -933,6 +938,7 @@
 				2665E9161FBD5625003BAEF9 /* QZChatModel.m in Sources */,
 				26C6B4A81FD9262400256ECF /* QZTimeLineCell.m in Sources */,
 				2642DF771FE0B8C7005CE0C4 /* QZWeiXinPhotoContainerView.m in Sources */,
+				26D20D8A1FE7B4D800B315A5 /* QZTimeLineRefreshHeader.m in Sources */,
 				262F7DC21FB0629600C2D24E /* QZHomeTableViewController.m in Sources */,
 				26446C8F1FBA94C800E09D25 /* QZShortVideoController.m in Sources */,
 				2642B7411FB941B800941CEA /* QZHomeTableViewCellModel.m in Sources */,
