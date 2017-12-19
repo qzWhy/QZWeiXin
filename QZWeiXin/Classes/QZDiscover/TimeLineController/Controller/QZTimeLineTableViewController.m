@@ -12,7 +12,13 @@
 #import "QZTimeLineCell.h"
 #import "QZTimeLineCellModel.h"
 
+#import "SDTimeLineRefreshHeader.h"
+
+#import "SDRefreshHeaderView.h"
+
+#import "SDRefresh.h"
 //#import "QZTimeLineRefreshHeader.h"
+
 //#import "QZTimeLineCellModel.h"
 
 #define kTimeLineTableViewCellId @"QZTimeLineCellIdentifier"
@@ -20,11 +26,16 @@
 
 @interface QZTimeLineTableViewController ()
 
+@property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, assign) BOOL isReplayingComm;
+
 @end
 
 @implementation QZTimeLineTableViewController
 {
-//    QZTimeLineRefreshHeader *_refreshHeader;
+    SDTimeLineRefreshHeader *_refreshHeader;
+    
+    CGFloat _lastScrollViewOffsetY;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -51,6 +62,12 @@
     self.edgesForExtendedLayout = UIRectEdgeTop;
     
     [self.dataArray addObjectsFromArray:[self creatModelsWithCount:10]];
+    
+    __weak typeof(self) weakSelf = self;
+    //下拉加载
+    
+    
+    
     QZTimeLineTableHeaderView *headerView = [QZTimeLineTableHeaderView new];
     headerView.frame = CGRectMake(0, 0, 0, 260);
     self.tableView.tableHeaderView = headerView;
@@ -60,13 +77,45 @@
     self.tableView.lee_theme
     .LeeAddSeparatorColor(DAY,[[UIColor lightGrayColor] colorWithAlphaComponent:0.5f])
     .LeeAddSeparatorColor(NIGHT,[[UIColor grayColor] colorWithAlphaComponent:0.5f]);
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardNotification:) name:UIKeyboardWillChangeFrameNotification object:nil];
    
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
+    [super viewDidAppear:animated];
     
+    if (!_refreshHeader.superview) {
+        _refreshHeader = [SDTimeLineRefreshHeader refreshHeaderWithCenter:CGPointMake(40, 45)];
+        _refreshHeader.scrollView = self.tableView;
+        __weak typeof(_refreshHeader) weakHeader = _refreshHeader;
+        __weak typeof(self) weakSelf = self;
+        [_refreshHeader setRefreshingBlock:^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                weakSelf.dataArray = [[weakSelf creatModelsWithCount:10] mutableCopy];
+                [weakHeader endRefreshing];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [weakSelf.tableView reloadData];
+                });
+            });
+        }];
+        [self.tableView.superview addSubview:_refreshHeader];
+    } else {
+        [self.tableView.superview bringSubviewToFront:_refreshHeader];
+    }
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [_textField resignFirstResponder];
+}
+
+- (void)dealloc
+{
+    [_refreshHeader removeFromSuperview];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (NSArray *)creatModelsWithCount:(NSInteger)count
@@ -234,5 +283,28 @@
     }
     return width;
 }
+- (void)keyboardNotification:(NSNotification *)notification
+{
+    NSDictionary *dict = notification.userInfo;
+    CGRect rect = [dict[@"UIKeyboardFrameEndUserInfoKey"] CGRectValue];
+    
+    
+//    
+//    CGRect textFieldRect = CGRectMake(0, rect.origin.y - textFieldH, rect.size.width, textFieldH);
+//    if (rect.origin.y == [UIScreen mainScreen].bounds.size.height) {
+//        textFieldRect = rect;
+//    }
+//    
+//    [UIView animateWithDuration:0.25 animations:^{
+//        _textField.frame = textFieldRect;
+//    }];
+//    
+//    CGFloat h = rect.size.height + textFieldH;
+//    if (_totalKeybordHeight != h) {
+//        _totalKeybordHeight = h;
+//        [self adjustTableViewToFitKeyboard];
+//    }
+}
+
 
 @end

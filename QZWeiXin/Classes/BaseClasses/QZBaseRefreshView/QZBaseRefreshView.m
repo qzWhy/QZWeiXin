@@ -15,6 +15,7 @@ NSString *const kQZBaseRefreshViewObserveKeyPath = @"contentOffset";
 - (void)setScrollView:(UIScrollView *)scrollView
 {
     _scrollView = scrollView;
+    
     [scrollView addObserver:self forKeyPath:kQZBaseRefreshViewObserveKeyPath options:NSKeyValueObservingOptionNew context:nil];
 }
 - (void)willMoveToSuperview:(UIView *)newSuperview
